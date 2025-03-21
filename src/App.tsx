@@ -98,27 +98,28 @@ function App() {
                 </div>
               </div>
             </div>
-            <div>
-                    <p className="text-[#020848] text-base font-medium leading-normal">Track</p>
-                    <p className="text-[#020848] text-sm font-normal leading-normal">
-                      Automatically keep track of your business development efforts and pull comprehensive reports detailing client interactions. 
-                    </p>
-                  </div>
-                </div>
 
-                <div className="flex flex-col gap-3 pb-3">
+            <div className="flex flex-col gap-3 pb-3">
                   <div
                     className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
                     style={{
                       backgroundImage: 'url("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80")'
                     }}
                   ></div>
+                  <div>
+                    <p className="text-[#020848] text-base font-medium leading-normal">Track</p>
+                    <p className="text-[#020848] text-sm font-normal leading-normal">
+                      Automatically keep track of your business development efforts and pull comprehensive reports detailing client interactions. 
+                    </p>
+                  </div>
+                </div>
+                
 
             <div className="@container">
               <div className="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
                 <div className="flex flex-col gap-2 text-center">
                   <h1 className="text-[#020848] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
-                    Ready to transform your client acquisition? Start Today!
+                    Ready to transform your client acquisition? Start today.
                   </h1>
                 </div>
                 <div className="flex flex-1 justify-center">
