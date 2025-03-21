@@ -10,7 +10,7 @@ function App() {
             <div className="size-4">
               <Magnet />
             </div>
-            <h2 className="text-[#020848] text-lg font-bold leading-tight tracking-[-0.015em]">Magnet Legal</h2>
+            <h2 className="text-[#020848] text-lg font-bold leading-tight tracking-[-0.015em]">MagNet Legal</h2>
           </div>
           <div>
             <a 
@@ -36,10 +36,10 @@ function App() {
                 >
                   <div className="flex flex-col gap-2 text-left">
                     <h1 className="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
-                      Legal Discovery, Automated
+                      Client Acquisition, Automated
                     </h1>
                     <h2 className="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                      AI-powered platform for automated client discovery and acquisition. Find, qualify, and engage high-value legal clients automatically.
+                      AI-powered platform for automated client discovery and acquisition. Discover, engage, and track high-value client leads automatically.
                     </h2>
                   </div>
                   <div className="flex-wrap gap-3 flex">
