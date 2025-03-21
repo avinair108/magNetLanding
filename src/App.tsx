@@ -96,10 +96,8 @@ function App() {
                     </p>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            <div className="flex flex-col gap-3 pb-3">
+                <div className="flex flex-col gap-3 pb-3">
                   <div
                     className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
                     style={{
@@ -113,6 +111,9 @@ function App() {
                     </p>
                   </div>
                 </div>
+                
+              </div>
+            </div>
                 
 
             <div className="@container">
