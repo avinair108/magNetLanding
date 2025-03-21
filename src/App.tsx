@@ -120,9 +120,6 @@ function App() {
                   <h1 className="text-[#020848] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
                     Ready to transform your client acquisition?
                   </h1>
-                  <p className="text-[#020848] text-base font-normal leading-normal max-w-[720px]">
-                    Book a demo today
-                  </p>
                 </div>
                 <div className="flex flex-1 justify-center">
                   <div className="flex justify-center">
@@ -133,7 +130,7 @@ function App() {
                         rel="noopener noreferrer"
                         className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#111189] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow"
                       >
-                        <span className="truncate">Book a demo</span>
+                        <span className="truncate">Book a demo today!</span>
                       </a>
                     </div>
                   </div>
