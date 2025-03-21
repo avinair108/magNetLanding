@@ -76,7 +76,7 @@ function App() {
                   ></div>
                   <div>
                     <p className="text-[#020848] text-base font-medium leading-normal">Scraping Agent</p>
-                    <p className="text-[#891C1C] text-sm font-normal leading-normal">
+                    <p className="text-[#020848] text-sm font-normal leading-normal">
                       Intelligent scanning of legal directories, business filings, and online sources to identify high-potential leads.
                     </p>
                   </div>
@@ -91,7 +91,7 @@ function App() {
                   ></div>
                   <div>
                     <p className="text-[#020848] text-base font-medium leading-normal">Lead Qualification</p>
-                    <p className="text-[#891C1C] text-sm font-normal leading-normal">
+                    <p className="text-[#020848] text-sm font-normal leading-normal">
                       AI-driven analysis to assess lead quality and prioritize outreach, ensuring you focus on the most promising prospects.
                     </p>
                   </div>
@@ -106,7 +106,7 @@ function App() {
                   ></div>
                   <div>
                     <p className="text-[#020848] text-base font-medium leading-normal">Communication Agent</p>
-                    <p className="text-[#891C1C] text-sm font-normal leading-normal">
+                    <p className="text-[#020848] text-sm font-normal leading-normal">
                       Automated personalized outreach via email and messaging to engage prospects effectively and efficiently.
                     </p>
                   </div>
