@@ -39,7 +39,7 @@ function App() {
                       Client Acquisition, Automated
                     </h1>
                     <h2 className="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                      AI-powered platform for automated client discovery and acquisition. Discover, engage, and track high-value client leads automatically.
+                      AI-powered platform for legal client acquisition. Discover, engage, and track high-value client leads automatically.
                     </h2>
                   </div>
                   <div className="flex-wrap gap-3 flex">
@@ -62,7 +62,7 @@ function App() {
                   Features that transform your client acquisition
                 </h1>
                 <p className="text-[#020848] text-base font-normal leading-normal max-w-[720px]">
-                  Our AI-powered platform streamlines your client discovery process, making it easier than ever to find and engage with potential clients. Here's how we make it possible.
+                  Our AI-powered platform streamlines your client discovery process, making it easier than ever to find, engage, and track interactions with potential clients. Here's how we make it possible.
                 </p>
               </div>
 
@@ -75,9 +75,9 @@ function App() {
                     }}
                   ></div>
                   <div>
-                    <p className="text-[#020848] text-base font-medium leading-normal">Scraping Agent</p>
+                    <p className="text-[#020848] text-base font-medium leading-normal">Discover</p>
                     <p className="text-[#020848] text-sm font-normal leading-normal">
-                      Intelligent scanning of legal directories, business filings, and online sources to identify high-potential leads.
+                      Intelligent scanning of legal directories, business filings, and other online sources to identify high-potential leads.
                     </p>
                   </div>
                 </div>
@@ -90,9 +90,18 @@ function App() {
                     }}
                   ></div>
                   <div>
-                    <p className="text-[#020848] text-base font-medium leading-normal">Lead Qualification</p>
+                    <p className="text-[#020848] text-base font-medium leading-normal">Contact</p>
                     <p className="text-[#020848] text-sm font-normal leading-normal">
-                      AI-driven analysis to assess lead quality and prioritize outreach, ensuring you focus on the most promising prospects.
+                      Automated personalized outreach suggestions that you can use to engage prospects effectively and efficiently.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+                    <p className="text-[#020848] text-base font-medium leading-normal">Track</p>
+                    <p className="text-[#020848] text-sm font-normal leading-normal">
+                      Automatically keep track of your business development efforts and pull comprehensive reports detailing client interactions. 
                     </p>
                   </div>
                 </div>
@@ -104,21 +113,12 @@ function App() {
                       backgroundImage: 'url("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80")'
                     }}
                   ></div>
-                  <div>
-                    <p className="text-[#020848] text-base font-medium leading-normal">Communication Agent</p>
-                    <p className="text-[#020848] text-sm font-normal leading-normal">
-                      Automated personalized outreach via email and messaging to engage prospects effectively and efficiently.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
 
             <div className="@container">
               <div className="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
                 <div className="flex flex-col gap-2 text-center">
                   <h1 className="text-[#020848] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
-                    Ready to transform your client acquisition?
+                    Ready to transform your client acquisition? Start Today!
                   </h1>
                 </div>
                 <div className="flex flex-1 justify-center">
@@ -130,7 +130,7 @@ function App() {
                         rel="noopener noreferrer"
                         className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#111189] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow"
                       >
-                        <span className="truncate">Book a demo today!</span>
+                        <span className="truncate">Book a demo</span>
                       </a>
                     </div>
                   </div>
