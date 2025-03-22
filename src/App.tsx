@@ -29,7 +29,7 @@ function App() {
             <div className="@container">
               <div className="@[480px]:p-4">
                 <div
-                  className="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                  className="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl @[480px]:gap-8 items-start justify-end px-4 pb-10 @[480px]:px-10"
                   style={{
                     backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80")'
                   }}
@@ -66,8 +66,8 @@ function App() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3">
-                <div className="flex flex-col gap-3 pb-3">
+              <div className="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-8">
+                <div className="flex flex-col gap-4 pb-4">
                   <div
                     className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
                     style={{
@@ -75,14 +75,14 @@ function App() {
                     }}
                   ></div>
                   <div>
-                    <p className="text-[#020848] text-base font-medium leading-normal">Discover</p>
+                    <p className="text-[#020848] text-lg font-bold leading-normal mb-2">Discover</p>
                     <p className="text-[#020848] text-sm font-normal leading-normal">
                       Intelligent scanning of legal directories, business filings, and other online sources to identify high-potential leads.
                     </p>
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-3 pb-3">
+                <div className="flex flex-col gap-4 pb-4">
                   <div
                     className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
                     style={{
@@ -90,14 +90,14 @@ function App() {
                     }}
                   ></div>
                   <div>
-                    <p className="text-[#020848] text-base font-medium leading-normal">Contact</p>
+                    <p className="text-[#020848] text-lg font-bold leading-normal mb-2">Contact</p>
                     <p className="text-[#020848] text-sm font-normal leading-normal">
                       Automated personalized outreach suggestions that you can use to engage prospects effectively and efficiently.
                     </p>
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-3 pb-3">
+                <div className="flex flex-col gap-4 pb-4">
                   <div
                     className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
                     style={{
@@ -105,7 +105,7 @@ function App() {
                     }}
                   ></div>
                   <div>
-                    <p className="text-[#020848] text-base font-medium leading-normal">Track</p>
+                    <p className="text-[#020848] text-lg font-bold leading-normal mb-2">Track</p>
                     <p className="text-[#020848] text-sm font-normal leading-normal">
                       Automatically keep track of your business development efforts and pull comprehensive reports detailing client interactions. 
                     </p>
@@ -115,11 +115,10 @@ function App() {
               </div>
             </div>
                 
-
             <div className="@container">
               <div className="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
-                <div className="flex flex-col gap-2 text-center">
-                  <h1 className="text-[#020848] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                <div className="flex flex-col gap-2 text-center items-center mx-auto">
+                  <h1 className="text-[#020848] tracking-light text-[32px] font-bold leading-tight text-center @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
                     Ready to transform your client acquisition? Start today.
                   </h1>
                 </div>
