@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="relative flex size-full min-h-screen flex-col bg-[#FFFBF1] group/design-root overflow-x-hidden" style={{ fontFamily: 'Inter, "Noto Sans", sans-serif' }}>
       <div className="layout-container flex h-full grow flex-col">
-        <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#020848] px-10 py-3">
+        <header className="flex items-center justify-between whitespace-nowrap px-10 py-3">
           <div className="flex items-center gap-4 text-[#020848]">
             <div className="size-4">
               <Magnet />
@@ -31,7 +31,7 @@ function App() {
                 <div
                   className="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl @[480px]:gap-8 items-start justify-end px-4 pb-10 @[480px]:px-10"
                   style={{
-                    backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80")'
+                    backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://plus.unsplash.com/premium_photo-1694476607274-003dd175d073?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGxhd3llcnN8ZW58MHx8MHx8fDA%3D")'
                   }}
                 >
                   <div className="flex flex-col gap-2 text-left">
@@ -86,7 +86,7 @@ function App() {
                   <div
                     className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
                     style={{
-                      backgroundImage: 'url("https://images.unsplash.com/photo-1543286386-2e659306cd6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80")'
+                      backgroundImage: 'url("https://images.unsplash.com/photo-1525182008055-f88b95ff7980?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2FsbCUyMGNlbnRlcnxlbnwwfHwwfHx8MA%3D%3D")'
                     }}
                   ></div>
                   <div>
