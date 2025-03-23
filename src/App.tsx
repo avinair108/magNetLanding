@@ -57,8 +57,8 @@ function App() {
             </div>
 
             <div className="flex flex-col gap-10 px-4 py-10 @container">
-              <div className="flex flex-col gap-4">
-                <h1 className="text-[#020848] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+              <div className="flex flex-col gap-4 items-center text-center">
+                <h1 className="text-[#020848] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[800px] mx-auto whitespace-nowrap">
                   Features that transform your client acquisition
                 </h1>
                 <p className="text-[#020848] text-base font-normal leading-normal max-w-[720px]">
