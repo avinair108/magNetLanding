@@ -7,6 +7,9 @@ export default {
         center: true,
         padding: '2rem',
       },
+      fontFamily: {
+        serif: ['"Roboto Serif"', 'serif'],
+      },
     },
   },
   plugins: [],

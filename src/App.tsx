@@ -3,7 +3,7 @@ import { Magnet } from 'lucide-react';
 
 function App() {
   return (
-    <div className="relative flex size-full min-h-screen flex-col bg-[#FFFBF1] group/design-root overflow-x-hidden" style={{ fontFamily: 'Inter, "Noto Sans", sans-serif' }}>
+    <div className="relative flex size-full min-h-screen flex-col bg-[#FFFBF1] group/design-root overflow-x-hidden" style={{ fontFamily: '"Roboto Serif", serif' }}>
       <div className="layout-container flex h-full grow flex-col">
         <header className="flex items-center justify-between whitespace-nowrap px-10 py-3">
           <div className="flex items-center gap-4 text-[#020848]">
@@ -35,7 +35,7 @@ function App() {
                   }}
                 >
                   <div className="flex flex-col gap-2 text-left">
-                    <h1 className="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                    <h1 className="text-white text-4xl font-medium leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-medium @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
                       Client Acquisition, Automated
                     </h1>
                     <h2 className="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
