@@ -79,7 +79,7 @@ function App() {
                   <img 
                   src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" 
                   alt="Attorney using MagNet Legal" 
-                  className="rounded-xl shadow-lg"
+                  className="relative z-10 w-full rounded-lg shadow-md"
                 />
                 </div>
               </div>
@@ -136,7 +136,7 @@ function App() {
               <img
                     src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
                     alt="Legal Analytics Dashboard"
-                    className="relative z-10 w-full rounded-lg shadow-md"
+                    className="rounded-xl shadow-lg"
                   />
                 <div className="absolute -bottom-6 -right-6 hidden lg:block">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#C9A34D] text-[#1A2E40]">
