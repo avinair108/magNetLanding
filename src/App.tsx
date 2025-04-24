@@ -136,7 +136,7 @@ function App() {
               <img
                     src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
                     alt="Legal Analytics Dashboard"
-                    className="rounded-xl shadow-lg"
+                    className="rounded-xl shadow-lg z-0"
                   />
                 <div className="absolute -bottom-6 -right-6 hidden lg:block">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#C9A34D] text-[#1A2E40]">
