@@ -11,7 +11,7 @@ function App() {
               <div className="text-[#3A6EA5]">
                 <Magnet size={24} />
               </div>
-              <h2 className="text-xl font-semibold tracking-tight">MagNet Legal</h2>
+              <h2 className="text-xl font-semibold tracking-tight">MagNet Agents</h2>
             </div>
             
             <div className="hidden md:flex items-center gap-8">
@@ -78,7 +78,7 @@ function App() {
                   <div className="absolute inset-0 bg-gradient-to-br from-[#3A6EA5]/20 to-[#1A2E40] opacity-20"></div>
                   <img 
                   src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" 
-                  alt="Attorney using MagNet Legal" 
+                  alt="Attorney using MagNet Agents" 
                   className="relative z-10 w-full rounded-lg shadow-md"
                 />
                 </div>
@@ -149,7 +149,7 @@ function App() {
                 <h3 className="text-2xl font-bold text-[#1A2E40]">Designed Specifically for Lawyers</h3>
                 <div className="mt-6 space-y-6 text-[#6B7280]">
                   <p>
-                    MagNet Legal was built from the ground up for lawyers, with features that address the unique challenges 
+                    MagNet Agents was built from the ground up for lawyers, with features that address the unique challenges 
                     of legal business development.
                   </p>
                   <p>
@@ -220,7 +220,7 @@ function App() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h2 className="text-3xl font-bold tracking-tight text-[#1A2E40] sm:text-4xl">
-                How MagNet Legal Works
+                How MagNet Agents Works
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-lg text-[#6B7280]">
                 Our intuitive platform functions standalone and also seamlessly integrates with your exisiting tools, providing immediate value with minimal setup.
@@ -281,7 +281,7 @@ function App() {
                   Ready to transform your client acquisition?
                 </h2>
                 <p className="mt-4 text-lg text-[#E6E6E6]">
-                  Get started today and see how MagNet Legal can help your firm grow.
+                  Get started today and see how MagNet Agents can help your firm grow.
                 </p>
               </div>
               <div className="mt-8 flex lg:mt-0 lg:justify-end">
@@ -308,11 +308,11 @@ function App() {
                 <div className="text-[#3A6EA5]">
                   <Magnet size={20} />
                 </div>
-                <h2 className="text-lg font-semibold">MagNet Legal</h2>
+                <h2 className="text-lg font-semibold">MagNet Agents</h2>
               </div>
               <div className="mt-8 md:mt-0">
                 <p className="text-center text-sm text-[#6B7280]">
-                  &copy; {new Date().getFullYear()} MagNet Legal. All rights reserved.
+                  &copy; {new Date().getFullYear()} MagNet Agents. All rights reserved.
                 </p>
               </div>
             </div>
