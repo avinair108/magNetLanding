@@ -1,13 +1,50 @@
 import { Magnet, ChevronRight, BarChart3, Search, MessageSquare, TrendingUp, Clock, Users } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      
+      // Show navbar when scrolling up or when at the top of the page
+      if (prevScrollPos > currentScrollPos || currentScrollPos < 10) {
+        setVisible(true);
+      } else {
+        // Hide navbar when scrolling down (but not at the top)
+        setVisible(false);
+      }
+      
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    // Add throttling to avoid excessive function calls
+    let timeoutId: number | null = null;
+    const throttledScroll = () => {
+      if (timeoutId === null) {
+        timeoutId = window.setTimeout(() => {
+          handleScroll();
+          timeoutId = null;
+        }, 100);
+      }
+    };
+
+    window.addEventListener('scroll', throttledScroll);
+    return () => {
+      window.removeEventListener('scroll', throttledScroll);
+      if (timeoutId) window.clearTimeout(timeoutId);
+    };
+  }, [prevScrollPos]);
+
   return (
     <div className="relative flex size-full min-h-screen flex-col bg-[#FDFDFD] overflow-x-hidden" style={{ fontFamily: '"Inter", sans-serif' }}>
       <div className="flex h-full grow flex-col">
         {/* Navigation */}
-        <header className="sticky top-0 z-10 border-b border-[#E6E6E6] bg-white/90 backdrop-blur-sm">
+        <header className={`fixed top-0 left-0 right-0 z-10 bg-[#1A2E40] backdrop-blur-sm transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
           <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-            <div className="flex items-center gap-2 text-[#1A2E40]">
+            <div className="flex items-center gap-2 text-white">
               <div className="text-[#3A6EA5]">
                 <Magnet size={24} />
               </div>
@@ -15,9 +52,9 @@ function App() {
             </div>
             
             <div className="hidden md:flex items-center gap-8">
-              <a href="#benefits" className="text-[#6B7280] hover:text-[#3A6EA5] text-sm font-medium transition">Benefits</a>
-              <a href="#features" className="text-[#6B7280] hover:text-[#3A6EA5] text-sm font-medium transition">Features</a>
-              <a href="#how-it-works" className="text-[#6B7280] hover:text-[#3A6EA5] text-sm font-medium transition">How It Works</a>
+              <a href="#benefits" className="text-[#E6E6E6] hover:text-[#3A6EA5] text-sm font-medium transition">Benefits</a>
+              <a href="#features" className="text-[#E6E6E6] hover:text-[#3A6EA5] text-sm font-medium transition">Features</a>
+              <a href="#how-it-works" className="text-[#E6E6E6] hover:text-[#3A6EA5] text-sm font-medium transition">How It Works</a>
             </div>
             
             <div>
@@ -35,7 +72,7 @@ function App() {
         </header>
 
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-[#1A2E40] py-20 sm:py-32">
+        <section className="relative overflow-hidden bg-[#1A2E40] h-screen flex items-center">
           <div className="absolute inset-0 opacity-20 mix-blend-overlay">
             <svg className="h-full w-full" xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
               <path fill="none" stroke="#C9A34D" strokeWidth="1.5" d="M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63"></path>
@@ -46,42 +83,30 @@ function App() {
             </svg>
           </div>
           
-          <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-8">
-              <div className="flex flex-col justify-center">
-                <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-                  Client Acquisition,
-                  <span className="block text-[#3A6EA5]">Automated</span>
-                </h1>
-                <p className="mt-6 max-w-xl text-lg text-[#E6E6E6]">
-                  Personalized AI agent for lawyers to establish new client relationships and drive revenue.
-                </p>
-                <div className="mt-8 flex flex-wrap gap-4">
-                  <a
-                    href="https://calendly.com/lb827-cornell/30min?month=2025-03"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="rounded-lg bg-[#3A6EA5] px-6 py-3 text-base font-medium text-white shadow-md hover:bg-[#325d8c] focus:outline-none focus:ring-2 focus:ring-[#3A6EA5] focus:ring-offset-2 focus:ring-offset-[#1A2E40] transition"
-                  >
-                    Book a demo
-                  </a>
-                  <a
-                    href="#benefits"
-                    className="rounded-lg border border-[#6B7280] bg-transparent px-6 py-3 text-base font-medium text-white hover:bg-white/10 transition"
-                  >
-                    Learn more
-                  </a>
-                </div>
-              </div>
-              <div className="relative">
-                <div className="relative overflow-hidden rounded-xl bg-[#E6E6E6]/10 backdrop-blur-sm p-6 shadow-xl ring-1 ring-white/10">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#3A6EA5]/20 to-[#1A2E40] opacity-20"></div>
-                  <img 
-                  src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" 
-                  alt="Attorney using MagNet Agents" 
-                  className="relative z-10 w-full rounded-lg shadow-md"
-                />
-                </div>
+          <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
+            <div className="flex flex-col items-center text-center">
+              <h1 className="text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
+                Client Acquisition,
+                <span className="block text-[#3A6EA5]">Automated</span>
+              </h1>
+              <p className="mt-8 max-w-2xl text-xl text-[#E6E6E6]">
+                Personalized AI agent for lawyers to establish new client relationships and drive revenue.
+              </p>
+              <div className="mt-10 flex flex-wrap gap-6 justify-center">
+                <a
+                  href="https://calendly.com/lb827-cornell/30min?month=2025-03"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg bg-[#3A6EA5] px-8 py-4 text-lg font-medium text-white shadow-md hover:bg-[#325d8c] focus:outline-none focus:ring-2 focus:ring-[#3A6EA5] focus:ring-offset-2 focus:ring-offset-[#1A2E40] transition"
+                >
+                  Book a demo
+                </a>
+                <a
+                  href="#benefits"
+                  className="rounded-lg border border-[#6B7280] bg-transparent px-8 py-4 text-lg font-medium text-white hover:bg-white/10 transition"
+                >
+                  Learn more
+                </a>
               </div>
             </div>
           </div>
@@ -133,11 +158,11 @@ function App() {
             
             <div className="mt-16 grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-12">
               <div className="relative">
-              <img
-                    src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-                    alt="Legal Analytics Dashboard"
-                    className="rounded-xl shadow-lg z-0"
-                  />
+                <img
+                  src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+                  alt="Legal Analytics Dashboard"
+                  className="rounded-xl shadow-lg z-0"
+                />
                 <div className="absolute -bottom-6 -right-6 hidden lg:block">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#C9A34D] text-[#1A2E40]">
                     <Users size={24} />
