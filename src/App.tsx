@@ -341,7 +341,7 @@ function App() {
                   Ready to transform your client acquisition?
                 </h2>
                 <p className="mt-4 text-lg text-[#E6E6E6]">
-                  Get started today and see how MagNet Agents can help you build client relationships.
+                  Get started today and see how MagNet Agents can help you establish new client relationships.
                 </p>
               </div>
               <div className="mt-8 flex lg:mt-0 lg:justify-end">
