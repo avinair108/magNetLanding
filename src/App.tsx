@@ -77,7 +77,15 @@ function App() {
               <a href="#how-it-works" className="text-[#E6E6E6] hover:text-[#3A6EA5] text-sm font-medium transition">How It Works</a>
             </div>
             
-            <div>
+            <div className="flex items-center gap-4">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSez_DfoMOipySbSorJhxhW3vu4SntPGEG4rh7hQjTuzK_NSwA/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center rounded-lg border border-[#C9A34D] bg-transparent px-5 py-2.5 text-sm font-medium text-[#C9A34D] hover:bg-[#C9A34D] hover:text-[#1A2E40] transition"
+              >
+                <span>Sign up</span>
+              </a>
               <a 
                 href="https://calendly.com/lb827-cornell/30min?month=2025-03"
                 target="_blank"
@@ -122,11 +130,14 @@ function App() {
                   Book a demo
                 </a>
                 <a
-                  href="#benefits"
-                  className="rounded-lg border border-[#6B7280] bg-transparent px-8 py-4 text-lg font-medium text-white hover:bg-white/10 transition"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSez_DfoMOipySbSorJhxhW3vu4SntPGEG4rh7hQjTuzK_NSwA/viewform?usp=header"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg bg-[#C9A34D] px-8 py-4 text-lg font-medium text-[#1A2E40] shadow-md hover:bg-[#b89344] transition"
                 >
-                  Learn more
+                  Sign up
                 </a>
+                
               </div>
             </div>
           </div>
@@ -345,7 +356,15 @@ function App() {
                 </p>
               </div>
               <div className="mt-8 flex lg:mt-0 lg:justify-end">
-                <div className="rounded-md shadow">
+                <div className="flex gap-4">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSez_DfoMOipySbSorJhxhW3vu4SntPGEG4rh7hQjTuzK_NSwA/viewform?usp=header"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center rounded-lg border border-[#C9A34D] bg-transparent px-6 py-4 text-base font-medium text-[#C9A34D] hover:bg-[#C9A34D] hover:text-[#1A2E40] transition"
+                  >
+                    Sign up
+                  </a>
                   <a
                     href="https://calendly.com/lb827-cornell/30min?month=2025-03"
                     target="_blank"
