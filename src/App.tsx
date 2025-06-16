@@ -79,7 +79,7 @@ function App() {
             
             <div className="flex items-center gap-4">
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSez_DfoMOipySbSorJhxhW3vu4SntPGEG4rh7hQjTuzK_NSwA/viewform?usp=header"
+                href="https://app.magnetlegal.co"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center rounded-lg border border-[#C9A34D] bg-transparent px-5 py-2.5 text-sm font-medium text-[#C9A34D] hover:bg-[#C9A34D] hover:text-[#1A2E40] transition"
@@ -130,7 +130,7 @@ function App() {
                   Book a demo
                 </a>
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSez_DfoMOipySbSorJhxhW3vu4SntPGEG4rh7hQjTuzK_NSwA/viewform?usp=header"
+                  href="https://app.magnetlegal.co"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-lg bg-[#C9A34D] px-8 py-4 text-lg font-medium text-[#1A2E40] shadow-md hover:bg-[#b89344] transition"
@@ -352,13 +352,13 @@ function App() {
                   Ready to transform your client acquisition?
                 </h2>
                 <p className="mt-4 text-lg text-[#E6E6E6]">
-                  Get started today and see how MagNet Agents can help you establish new client relationships.
+                Sign up and start establishing tomorrow's new client relationships today.
                 </p>
               </div>
               <div className="mt-8 flex lg:mt-0 lg:justify-end">
                 <div className="flex gap-4">
                   <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSez_DfoMOipySbSorJhxhW3vu4SntPGEG4rh7hQjTuzK_NSwA/viewform?usp=header"
+                    href="https://app.magnetlegal.co"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center rounded-lg border border-[#C9A34D] bg-transparent px-6 py-4 text-base font-medium text-[#C9A34D] hover:bg-[#C9A34D] hover:text-[#1A2E40] transition"
@@ -383,14 +383,19 @@ function App() {
         <footer className="bg-[#FDFDFD] border-t border-[#E6E6E6]">
           <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
             <div className="md:flex md:items-center md:justify-between">
-              <div className="flex items-center gap-2 text-[#1A2E40]">
+              <div className="flex items-center gap-4 text-[#1A2E40]">
                 <div className="text-[#3A6EA5]">
                   <Magnet size={20} />
                 </div>
                 <h2 className="text-lg font-semibold">MagNet Agents</h2>
+                <img 
+                  src="/nvidia-inception-program-badge-rgb-for-screen.png" 
+                  alt="NVIDIA Inception Program" 
+                  className="h-10 w-auto"
+                />
               </div>
               <div className="mt-8 md:mt-0">
-                <p className="text-center text-sm text-[#6B7280]">
+                <p className="text-sm text-[#6B7280]">
                   &copy; {new Date().getFullYear()} MagNet Agents. All rights reserved.
                 </p>
               </div>
