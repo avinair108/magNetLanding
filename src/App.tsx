@@ -87,7 +87,7 @@ function App() {
                 <span>Sign up</span>
               </a>
               <a 
-                href="https://calendly.com/lb827-cornell/30min?month=2025-03"
+                href="https://calendly.com/magnetagents/30min"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center rounded-lg bg-[#3A6EA5] px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-[#325d8c] transition"
@@ -366,7 +366,7 @@ function App() {
                     Sign up
                   </a>
                   <a
-                    href="https://calendly.com/lb827-cornell/30min?month=2025-03"
+                    href="https://calendly.com/magnetagents/30min"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center rounded-lg bg-[#C9A34D] px-6 py-4 text-base font-medium text-[#1A2E40] hover:bg-[#b89344] transition"
