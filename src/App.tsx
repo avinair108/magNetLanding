@@ -122,7 +122,7 @@ function App() {
               </p>
               <div className="mt-10 flex flex-wrap gap-6 justify-center">
                 <a
-                  href="https://calendly.com/lb827-cornell/30min?month=2025-03"
+                  href="https://calendly.com/magnetagents/30min"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-lg bg-[#3A6EA5] px-8 py-4 text-lg font-medium text-white shadow-md hover:bg-[#325d8c] focus:outline-none focus:ring-2 focus:ring-[#3A6EA5] focus:ring-offset-2 focus:ring-offset-[#1A2E40] transition"
