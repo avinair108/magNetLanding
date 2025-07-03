@@ -114,40 +114,6 @@ function PricingPlans() {
                 </a>
               </div>
             </div>
-
-            {/* Beta Tester */}
-            <div className="relative bg-white rounded-2xl shadow-lg border border-[#E6E6E6] p-8">
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-[#1A2E40] mb-2">Beta Tester</h3>
-                <p className="text-[#6B7280] mb-6">Special pricing for early adopters</p>
-                <div className="mb-6">
-                  <span className="text-4xl font-bold text-[#1A2E40]">$150</span>
-                  <span className="text-[#6B7280]">/month</span>
-                </div>
-                <ul className="space-y-4 mb-8 text-left">
-                  <li className="flex items-start gap-3">
-                    <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">All core MagNet Pro features</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">Beta access to new features</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">Direct feedback channel</span>
-                  </li>
-                </ul>
-                <a
-                  href="https://app.magnetlegal.co"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full inline-flex justify-center items-center px-6 py-3 border border-[#3A6EA5] text-[#3A6EA5] rounded-lg font-medium hover:bg-[#3A6EA5] hover:text-white transition"
-                >
-                  Start Now
-                </a>
-              </div>
-            </div>
           </div>
 
           {/* FAQ Section */}
