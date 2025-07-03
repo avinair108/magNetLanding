@@ -154,7 +154,7 @@ function PrivacyPolicy() {
               </p>
               <div className="bg-[#E6E6E6] p-4 rounded-lg">
                 <p className="text-[#1A2E40] font-medium">MagNet Agents</p>
-                <p className="text-[#6B7280]">Email: privacy@magnetlegal.co</p>
+                <p className="text-[#6B7280]">Email: legal@magnetlegal.co</p>
                 <p className="text-[#6B7280]">Address: [Your Business Address]</p>
               </div>
             </section>
