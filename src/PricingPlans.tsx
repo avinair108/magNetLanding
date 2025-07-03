@@ -70,7 +70,7 @@ function PricingPlans() {
                   rel="noopener noreferrer"
                   className="w-full inline-flex justify-center items-center px-6 py-3 border border-[#3A6EA5] text-[#3A6EA5] rounded-lg font-medium hover:bg-[#3A6EA5] hover:text-white transition"
                 >
-                  Start Free Trial
+                  Start Now
                 </a>
               </div>
             </div>
@@ -110,7 +110,7 @@ function PricingPlans() {
                   rel="noopener noreferrer"
                   className="w-full inline-flex justify-center items-center px-6 py-3 bg-[#3A6EA5] text-white rounded-lg font-medium hover:bg-[#325d8c] transition"
                 >
-                  Start Free Trial
+                  Start Now
                 </a>
               </div>
             </div>
@@ -144,7 +144,7 @@ function PricingPlans() {
                   rel="noopener noreferrer"
                   className="w-full inline-flex justify-center items-center px-6 py-3 border border-[#3A6EA5] text-[#3A6EA5] rounded-lg font-medium hover:bg-[#3A6EA5] hover:text-white transition"
                 >
-                  Start Free Trial
+                  Start Now
                 </a>
               </div>
             </div>
@@ -205,7 +205,7 @@ function PricingPlans() {
                 rel="noopener noreferrer"
                 className="inline-flex justify-center items-center px-8 py-4 bg-[#3A6EA5] text-white rounded-lg font-medium hover:bg-[#325d8c] transition"
               >
-                Start Free Trial
+                Start Now
               </a>
               <a
                 href="https://calendly.com/magnetagents/30min"
