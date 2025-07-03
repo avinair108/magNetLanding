@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './HomePage';
 import PrivacyPolicy from './PrivacyPolicy';
 import PricingPlans from './PricingPlans';
+import TermsOfService from './TermsOfService';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/pricing-plans" element={<PricingPlans />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
         </Routes>
         
         {/* Footer - Only shown on home page */}
@@ -44,6 +46,12 @@ function App() {
                         className="text-[#6B7280] hover:text-[#3A6EA5] transition"
                       >
                         Pricing Plans
+                      </Link>
+                      <Link 
+                        to="/terms-of-service" 
+                        className="text-[#6B7280] hover:text-[#3A6EA5] transition"
+                      >
+                        Terms of Service
                       </Link>
                     </div>
                     <p className="text-sm text-[#6B7280]">
