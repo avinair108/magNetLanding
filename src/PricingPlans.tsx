@@ -37,40 +37,33 @@ function PricingPlans() {
 
           {/* Pricing Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            {/* Starter Plan */}
+            {/* MagNet Pro For Individuals (Monthly Plan) */}
             <div className="relative bg-white rounded-2xl shadow-lg border border-[#E6E6E6] p-8">
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-[#1A2E40] mb-2">Starter</h3>
-                <p className="text-[#6B7280] mb-6">Perfect for solo practitioners</p>
-                
+                <h3 className="text-2xl font-bold text-[#1A2E40] mb-2">MagNet Pro For Individuals (Monthly Plan)</h3>
+                <p className="text-[#6B7280] mb-6">Best for individuals who want flexibility</p>
                 <div className="mb-6">
-                  <span className="text-4xl font-bold text-[#1A2E40]">$99</span>
+                  <span className="text-4xl font-bold text-[#1A2E40]">$250</span>
                   <span className="text-[#6B7280]">/month</span>
                 </div>
-
                 <ul className="space-y-4 mb-8 text-left">
                   <li className="flex items-start gap-3">
                     <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">Up to 100 AI-powered lead suggestions per month</span>
+                    <span className="text-[#6B7280]">Full access to MagNet Pro features</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">Basic client relationship tracking</span>
+                    <span className="text-[#6B7280]">AI-powered lead suggestions</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">Email support</span>
+                    <span className="text-[#6B7280]">Client relationship tracking</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">Standard reporting dashboard</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">Basic CRM integration</span>
+                    <span className="text-[#6B7280]">Email & phone support</span>
                   </li>
                 </ul>
-
                 <a
                   href="https://app.magnetlegal.co"
                   target="_blank"
@@ -82,55 +75,35 @@ function PricingPlans() {
               </div>
             </div>
 
-            {/* Professional Plan */}
+            {/* MagNet Pro For Individuals (Annual Plan) */}
             <div className="relative bg-white rounded-2xl shadow-xl border-2 border-[#3A6EA5] p-8 transform scale-105">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                 <div className="bg-[#C9A34D] text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
                   <Star size={16} />
-                  Most Popular
+                  Best Value
                 </div>
               </div>
-              
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-[#1A2E40] mb-2">Professional</h3>
-                <p className="text-[#6B7280] mb-6">Ideal for growing law firms</p>
-                
+                <h3 className="text-2xl font-bold text-[#1A2E40] mb-2">MagNet Pro For Individuals (Annual Plan)</h3>
+                <p className="text-[#6B7280] mb-6">Save more with annual billing</p>
                 <div className="mb-6">
-                  <span className="text-4xl font-bold text-[#1A2E40]">$299</span>
-                  <span className="text-[#6B7280]">/month</span>
+                  <span className="text-4xl font-bold text-[#1A2E40]">$2,500</span>
+                  <span className="text-[#6B7280]">/year</span>
                 </div>
-
                 <ul className="space-y-4 mb-8 text-left">
                   <li className="flex items-start gap-3">
                     <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">Up to 500 AI-powered lead suggestions per month</span>
+                    <span className="text-[#6B7280]">All monthly plan features</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">Advanced client relationship tracking</span>
+                    <span className="text-[#6B7280]">20% savings over monthly</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">Priority email & phone support</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">Advanced analytics & reporting</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">Full CRM integration</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">Custom outreach templates</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">Team collaboration features</span>
+                    <span className="text-[#6B7280]">Priority support</span>
                   </li>
                 </ul>
-
                 <a
                   href="https://app.magnetlegal.co"
                   target="_blank"
@@ -142,55 +115,36 @@ function PricingPlans() {
               </div>
             </div>
 
-            {/* Enterprise Plan */}
+            {/* Beta Tester */}
             <div className="relative bg-white rounded-2xl shadow-lg border border-[#E6E6E6] p-8">
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-[#1A2E40] mb-2">Enterprise</h3>
-                <p className="text-[#6B7280] mb-6">For large law firms & corporations</p>
-                
+                <h3 className="text-2xl font-bold text-[#1A2E40] mb-2">Beta Tester</h3>
+                <p className="text-[#6B7280] mb-6">Special pricing for early adopters</p>
                 <div className="mb-6">
-                  <span className="text-4xl font-bold text-[#1A2E40]">Custom</span>
-                  <span className="text-[#6B7280] block text-sm">Contact us for pricing</span>
+                  <span className="text-4xl font-bold text-[#1A2E40]">$150</span>
+                  <span className="text-[#6B7280]">/month</span>
                 </div>
-
                 <ul className="space-y-4 mb-8 text-left">
                   <li className="flex items-start gap-3">
                     <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">Unlimited AI-powered lead suggestions</span>
+                    <span className="text-[#6B7280]">All core MagNet Pro features</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">Enterprise-grade client tracking</span>
+                    <span className="text-[#6B7280]">Beta access to new features</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">Dedicated account manager</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">Custom reporting & analytics</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">Advanced integrations & API access</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">Custom AI model training</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">On-premise deployment options</span>
+                    <span className="text-[#6B7280]">Direct feedback channel</span>
                   </li>
                 </ul>
-
                 <a
-                  href="https://calendly.com/magnetagents/30min"
+                  href="https://app.magnetlegal.co"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex justify-center items-center px-6 py-3 border border-[#3A6EA5] text-[#3A6EA5] rounded-lg font-medium hover:bg-[#3A6EA5] hover:text-white transition"
                 >
-                  Contact Sales
+                  Start Free Trial
                 </a>
               </div>
             </div>
@@ -260,6 +214,14 @@ function PricingPlans() {
                 className="inline-flex justify-center items-center px-8 py-4 border border-[#3A6EA5] text-[#3A6EA5] rounded-lg font-medium hover:bg-[#3A6EA5] hover:text-white transition"
               >
                 Schedule Demo
+              </a>
+              <a
+                href="https://app.magnetlegal.co/auth"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex justify-center items-center px-8 py-4 border border-[#C9A34D] text-[#C9A34D] rounded-lg font-medium hover:bg-[#C9A34D] hover:text-white transition"
+              >
+                Sign Up
               </a>
             </div>
           </div>
