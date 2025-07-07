@@ -56,7 +56,7 @@ function HomePage() {
     }, 5000); // Change image every 5 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  }, [productImages.length]);
 
   return (
     <div className="relative flex size-full min-h-screen flex-col bg-[#FDFDFD] overflow-x-hidden" style={{ fontFamily: '"Inter", sans-serif' }}>

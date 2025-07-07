@@ -7,12 +7,14 @@ function TermsOfService() {
       {/* Navigation */}
       <header className="bg-[#1A2E40]">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+          <Link to="/">
           <div className="flex items-center gap-2 text-white">
             <div className="text-[#3A6EA5]">
               <Magnet size={24} />
             </div>
             <h2 className="text-xl font-semibold tracking-tight">MagNet Agents</h2>
           </div>
+          </Link>
           <Link
             to="/"
             className="flex items-center gap-2 text-[#E6E6E6] hover:text-[#3A6EA5] text-sm font-medium transition"
