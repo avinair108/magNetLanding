@@ -65,8 +65,8 @@ function PrivacyPolicy() {
                 <li>Preferred client type data and business development preferences</li>
                 <li>Communication preferences and marketing opt-ins</li>
               </ul>
-               <p className="text-red-600 font-bold mb-4">
-                Important: Our Service is not designed for storing or managing client files. Do not enter confidential or privileged information about your current or former clients into the platform.
+               <p className="text-600 font-bold mb-4">
+                Important: Do not enter confidential or privileged information about your current or former clients into the platform.
               </p>
 
               <h4 className="text-lg font-semibold text-[#1A2E40] mt-4 mb-2">2.1.2 Information from Newsletter Subscribers</h4>

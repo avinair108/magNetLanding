@@ -31,7 +31,7 @@ function PricingPlans() {
           <div className="text-center mb-16">
             <h1 className="text-4xl font-bold text-[#1A2E40] mb-4">Pricing Plans</h1>
             <p className="text-xl text-[#6B7280] max-w-3xl mx-auto">
-              Choose the perfect plan for your law practice. All plans include our core AI-powered client acquisition features with different levels of capacity and support.
+              Choose the perfect plan for your law practice. All plans include our core AI-powered client acquisition features with different levels of capacity and support. Optional pricing for each is possible with beta testing users.
             </p>
           </div>
 
@@ -43,7 +43,7 @@ function PricingPlans() {
                 <h3 className="text-2xl font-bold text-[#1A2E40] mb-2">MagNet Pro For Individuals (Monthly Plan)</h3>
                 <p className="text-[#6B7280] mb-6">Best for individuals who want flexibility</p>
                 <div className="mb-6">
-                  <span className="text-4xl font-bold text-[#1A2E40]">$250</span>
+                  <span className="text-4xl font-bold text-[#1A2E40]">$500</span>
                   <span className="text-[#6B7280]">/month</span>
                 </div>
                 <ul className="space-y-4 mb-8 text-left">
@@ -77,27 +77,17 @@ function PricingPlans() {
 
             {/* MagNet Pro For Individuals (Annual Plan) */}
             <div className="relative bg-white rounded-2xl shadow-xl border-2 border-[#3A6EA5] p-8 transform scale-105">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <div className="bg-[#C9A34D] text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
-                  <Star size={16} />
-                  Best Value
-                </div>
-              </div>
               <div className="text-center">
                 <h3 className="text-2xl font-bold text-[#1A2E40] mb-2">MagNet Pro For Individuals (Annual Plan)</h3>
                 <p className="text-[#6B7280] mb-6">Save more with annual billing</p>
                 <div className="mb-6">
-                  <span className="text-4xl font-bold text-[#1A2E40]">$2,500</span>
+                  <span className="text-4xl font-bold text-[#1A2E40]">$5,000</span>
                   <span className="text-[#6B7280]">/year</span>
                 </div>
                 <ul className="space-y-4 mb-8 text-left">
                   <li className="flex items-start gap-3">
                     <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
                     <span className="text-[#6B7280]">All monthly plan features</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
-                    <span className="text-[#6B7280]">20% savings over monthly</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="text-[#3A6EA5] mt-1 flex-shrink-0" size={20} />
