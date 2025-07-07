@@ -106,46 +106,12 @@ function PricingPlans() {
             </div>
           </div>
 
-          {/* FAQ Section */}
+          
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-[#1A2E40] text-center mb-12">Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-bold text-[#1A2E40] text-center mb-4">Questions?</h2>
+            <p className="text-center text-[#6B7280] mb-12">contact@magnetlegal.co</p>
             
-            <div className="space-y-8">
-              <div className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="text-xl font-semibold text-[#1A2E40] mb-3">Is there a free trial available?</h3>
-                <p className="text-[#6B7280]">
-                  Yes! We offer a 14-day free trial for all plans. No credit card required to start your trial.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="text-xl font-semibold text-[#1A2E40] mb-3">Can I change my plan later?</h3>
-                <p className="text-[#6B7280]">
-                  Absolutely. You can upgrade or downgrade your plan at any time. Changes take effect immediately, and we'll prorate any billing adjustments.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="text-xl font-semibold text-[#1A2E40] mb-3">What payment methods do you accept?</h3>
-                <p className="text-[#6B7280]">
-                  We accept all major credit cards (Visa, MasterCard, American Express) and bank transfers for Enterprise plans.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="text-xl font-semibold text-[#1A2E40] mb-3">Is my data secure and compliant?</h3>
-                <p className="text-[#6B7280]">
-                  Yes. We maintain SOC 2 Type II compliance and follow strict data protection standards. All data is encrypted in transit and at rest, and we maintain attorney-client privilege protections.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="text-xl font-semibold text-[#1A2E40] mb-3">Do you offer discounts for annual billing?</h3>
-                <p className="text-[#6B7280]">
-                  Yes! Annual billing saves you 20% compared to monthly billing. Contact us for custom pricing on multi-year agreements.
-                </p>
-              </div>
-            </div>
+            
           </div>
 
           {/* CTA Section */}
