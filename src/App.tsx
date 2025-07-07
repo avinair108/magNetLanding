@@ -4,6 +4,8 @@ import HomePage from './HomePage';
 import PrivacyPolicy from './PrivacyPolicy';
 import PricingPlans from './PricingPlans';
 import TermsOfService from './TermsOfService';
+import Newsletter from './Newsletter';
+import ClientMatch from './ClientMatch';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/pricing-plans" element={<PricingPlans />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/newsletter" element={<Newsletter />} />
+          <Route path="/client-match" element={<ClientMatch />} />
         </Routes>
         
         {/* Footer - Only shown on home page */}
@@ -52,6 +56,18 @@ function App() {
                         className="text-[#6B7280] hover:text-[#3A6EA5] transition"
                       >
                         Terms of Service
+                      </Link>
+                      <Link 
+                        to="/newsletter" 
+                        className="text-[#6B7280] hover:text-[#3A6EA5] transition"
+                      >
+                        Newsletter
+                      </Link>
+                      <Link 
+                        to="/client-match" 
+                        className="text-[#6B7280] hover:text-[#3A6EA5] transition"
+                      >
+                        Client Match
                       </Link>
                     </div>
                     <p className="text-sm text-[#6B7280]">
