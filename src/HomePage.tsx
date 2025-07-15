@@ -147,10 +147,10 @@ function HomePage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h2 className="text-3xl font-bold tracking-tight text-[#1A2E40] sm:text-4xl">
-                Accelerate Your Client Acquisition with MagNet
+                Why Our Customers Love MagNet
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-lg text-[#6B7280]">
-                Our AI-powered platform delivers exceptional results for modern law firms.
+                Our AI-powered platform delivers exceptional results for modern lawyers.
               </p>
             </div>
 
@@ -241,7 +241,7 @@ function HomePage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h2 className="text-3xl font-bold tracking-tight text-[#1A2E40] sm:text-4xl">
-                Features that transform your client acquisition
+                How MagNet Helps You Establish New Client Relationships
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-lg text-[#6B7280]">
                 Our AI-powered platform streamlines your client discovery process, making it easier than ever to find, engage, and track interactions with potential clients.
@@ -290,7 +290,7 @@ function HomePage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h2 className="text-3xl font-bold tracking-tight text-[#1A2E40] sm:text-4xl">
-                How MagNet Agents Works
+                Get Started with MagNet Today
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-lg text-[#6B7280]">
                 Our intuitive platform functions standalone and also seamlessly integrates with your exisiting tools, providing immediate value with minimal setup.
@@ -298,19 +298,20 @@ function HomePage() {
             </div>
             
             <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
+              {/* Step 1: Onboard Your Profile */}
               <div className="relative rounded-xl bg-white p-8 shadow-sm overflow-hidden border-t-4 border-[#3A6EA5]">
                 <div className="absolute -right-4 -top-4 flex h-8 w-8 items-center justify-center rounded-full bg-[#3A6EA5] text-white font-bold">
                   1
                 </div>
-                <h3 className="text-xl font-semibold text-[#1A2E40]">Connect Your Data</h3>
+                <h3 className="text-xl font-semibold text-[#1A2E40]">Onboard Your Profile</h3>
                 <p className="mt-4 text-[#6B7280]">
-                  Sync MagNet with your existing business data sources, CRM, and calendars to create a unified platform.
+                  Quickly set up your MagNet account and provide key details about your practice, areas of expertise, and business goals.
                 </p>
                 <p className="mt-3 text-[#6B7280]">
-                  Our secure integration process takes less than 15 minutes and preserves all client confidentiality.
+                  Our onboarding process is simple and secure, ensuring your information is protected at every step.
                 </p>
               </div>
-              
+              {/* Step 2: Set Your Preferences */}
               <div className="relative rounded-xl bg-white p-8 shadow-sm overflow-hidden border-t-4 border-[#C9A34D]">
                 <div className="absolute -right-4 -top-4 flex h-8 w-8 items-center justify-center rounded-full bg-[#C9A34D] text-white font-bold">
                   2
@@ -323,7 +324,7 @@ function HomePage() {
                   MagNet's AI engine adapts to your preferences, continuously improving its recommendations.
                 </p>
               </div>
-              
+              {/* Step 3: Start Growing */}
               <div className="relative rounded-xl bg-white p-8 shadow-sm overflow-hidden border-t-4 border-[#3A6EA5]">
                 <div className="absolute -right-4 -top-4 flex h-8 w-8 items-center justify-center rounded-full bg-[#3A6EA5] text-white font-bold">
                   3
