@@ -55,9 +55,18 @@ const products = [
     currency: 'usd',
     description: 'Best for individuals who want flexibility.',
     features: [
-      'Full access to MagNet Pro features',
-      'AI-powered lead suggestions',
-      'Client relationship tracking',
+      'Annual subscription with significant savings',
+      'Advanced lead discovery and AI-powered matching',
+      'Unlimited personalized outreach templates',
+      'Premium networking event recommendations',
+      'Advanced analytics and performance tracking',
+      'Priority customer support',
+      'Access to exclusive legal industry insights',
+      'Custom integration capabilities',
+      'Dedicated account manager',
+      'Advanced reporting and insights',
+      'Beta user benefits and early access to new features',
+      'Direct feedback channel to development team'
       
     ],
     popular: false,
@@ -69,9 +78,18 @@ const products = [
     currency: 'usd',
     description: 'Save more with annual billing.',
     features: [
-      'Full access to MagNet Pro features',
-      'AI-powered lead suggestions',
-      'Client relationship tracking',
+      'Annual subscription with significant savings',
+      'Advanced lead discovery and AI-powered matching',
+      'Unlimited personalized outreach templates',
+      'Premium networking event recommendations',
+      'Advanced analytics and performance tracking',
+      'Priority customer support',
+      'Access to exclusive legal industry insights',
+      'Custom integration capabilities',
+      'Dedicated account manager',
+      'Advanced reporting and insights',
+      'Beta user benefits and early access to new features',
+      'Direct feedback channel to development team'
  
     ],
     popular: true,
