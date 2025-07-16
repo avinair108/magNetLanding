@@ -58,7 +58,7 @@ const products = [
       'Full access to MagNet Pro features',
       'AI-powered lead suggestions',
       'Client relationship tracking',
-      'Email & phone support',
+      
     ],
     popular: false,
   },
@@ -72,7 +72,7 @@ const products = [
       'Full access to MagNet Pro features',
       'AI-powered lead suggestions',
       'Client relationship tracking',
-      'Email & phone support',
+ 
     ],
     popular: true,
   },
@@ -157,8 +157,8 @@ function PricingPlans() {
                     </p>
                     <p className="text-green-700 text-xs mt-1">
                       {product.name.includes('Annual')
-                        ? 'Use code MAGNETBETA1 for 25% off first year'
-                        : 'Use code MAGNETBETA3 for 50% off first 3 months'
+                        ? 'Use code MAGNETBETA25 for 25% off first year'
+                        : 'Use code MAGNETBETA50 for 50% off first 3 months'
                       }
                     </p>
                   </div>
