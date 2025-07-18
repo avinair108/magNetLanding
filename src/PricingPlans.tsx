@@ -166,7 +166,7 @@ function PricingPlans() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-3xl font-semibold text-[#1A2E40] mb-4">
-              Choose Your MagNet Pro Plan
+              Choose Your MagNet Plan
             </h1>
             <p className="text-[#6B7280] max-w-2xl mx-auto">
               Join our beta program and get exclusive early access to MagNet Agents with special pricing.
