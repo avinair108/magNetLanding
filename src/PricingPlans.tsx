@@ -83,7 +83,7 @@ const products = [
     popular: false,
   },
   {
-    priceId: 'price_monthly_beta',
+    priceId: 'price_1RhXOjAl20PLMb1WzJbeXc59',
     name: 'MagNet Pro – Monthly',
     price: 50000, // $500.00 in cents
     currency: 'usd',
@@ -110,7 +110,7 @@ const products = [
     popular: false,
   },
   {
-    priceId: 'price_annual_beta',
+    priceId: 'price_1RhXMoAl20PLMb1W5XMcAuIx',
     name: 'MagNet Pro – Annual',
     price: 500000, // $5,000.00 in cents
     currency: 'usd',
@@ -246,7 +246,7 @@ function PricingPlans() {
             <p>
               All plans include customer support and access to our beta program.
               As a beta user, you'll have direct access to our development team.
-              Questions? Contact our support team at contact@magnetlegal.co.
+              Questions? Contact us at contact@magnetlegal.co.
             </p>
           </div>
         </div>
