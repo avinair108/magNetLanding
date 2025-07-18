@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Check, Star, ArrowRight, Magnet, ArrowLeft } from 'lucide-react';
 
@@ -50,89 +50,78 @@ const Badge: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({ className, chil
 const products = [
   {
     priceId: 'price_1RmI4sAl20PLMb1WnQkqeC1J',
-    name: 'MagNet Basic For Individuals (Monthly Plan)',
-    description: 'Basic subscription with all essential features: discover, contact, and track.',
+    name: 'MagNet Basic – Monthly',
+    description: 'Start building your client pipeline with essential AI tools',
     mode: 'subscription',
     price: 10000, // $100.00 in cents
     currency: 'usd',
+    betaSpecial: 'Use code MAGNETBETA50 for 50% off your first 3 months',
     features: [
-      'Monthly subscription flexibility',
-      'Advanced lead discovery and AI-powered matching',
-      'Unlimited personalized outreach templates',
-      'Premium networking event recommendations',
-      'Advanced analytics and performance tracking',
-      'Priority customer support',
-      'Access to exclusive legal industry insights',
-      'Custom integration capabilities',
-      'Direct feedback channel to development team'
+      'Discover: Up to 10 AI-suggested client leads per month tailored to your practice',
+      'General legal market intel and selected event listings',
+      'Contact: Standard outreach templates',
+      'Calendar-based reminders and follow-up suggestions',
+      'Track: Basic activity log and summary dashboard',
+      'Support: Email support',
+      'Beta user access to new features as they roll out',
     ],
     popular: false,
   },
   {
     priceId: 'price_1RmI6UAl20PLMb1WD8dd7QNQ',
-    name: 'MagNet Basic For Individuals (Annual Plan)',
-    description: 'Basic subscription with all essential features: discover, contact, and track.',
+    name: 'MagNet Basic – Annual',
+    description: 'Save with annual billing',
     mode: 'subscription',
     price: 100000, // $1,000.00 in cents
     currency: 'usd',
+    betaSpecial: 'Use code MAGNETBETA25 for 25% off your first year',
     features: [
-      'Monthly subscription flexibility',
-      'Advanced lead discovery and AI-powered matching',
-      'Unlimited personalized outreach templates',
-      'Premium networking event recommendations',
-      'Advanced analytics and performance tracking',
-      'Priority customer support',
-      'Access to exclusive legal industry insights',
-      'Custom integration capabilities',
-      'Direct feedback channel to development team'
+      'Everything in MagNet Basic Monthly',
+      'Locked-in pricing for 12 months',
+      'Early access to select new features',
     ],
-    popular: true,
+    popular: false,
   },
   {
     priceId: 'price_monthly_beta',
-    name: 'MagNet Pro (Monthly)',
+    name: 'MagNet Pro – Monthly',
     price: 50000, // $500.00 in cents
     currency: 'usd',
-    description: 'Best for individuals who want flexibility.',
+    description: 'Unlock full AI capabilities and accelerate your business development',
+    betaSpecial: 'Use code MAGNETBETA50 for 50% off your first 3 months',
     features: [
-      'Annual subscription with significant savings',
-      'Advanced lead discovery and AI-powered matching',
-      'Unlimited personalized outreach templates',
-      'Premium networking event recommendations',
-      'Advanced analytics and performance tracking',
-      'Priority customer support',
-      'Access to exclusive legal industry insights',
-      'Custom integration capabilities',
+      'Includes everything in MagNet Basic',
+      'Discover: Unlimited AI-matched client leads, continuously updated based on your practice, preferences, and market shifts',
+      'Practice-specific legal intel reports',
+      'Curated, high-value networking event recommendations',
+      'Contact: Fully personalized outreach strategies and AI-written messaging for both LinkedIn and email',
+      'Custom outreach playbooks tailored to your niche',
+      'Smart sequencing and timing for follow-ups',
+      'Track: Automatic logging of every client interaction',
+      'Exportable business development reports (PDF/CSV)',
+      'ROI dashboard to track which efforts lead to new clients',
+      'Support & Services: Priority support',
       'Dedicated account manager',
-      'Advanced reporting and insights',
-      'Beta user benefits and early access to new features',
-      'Direct feedback channel to development team'
-      
+      'Custom integration capabilities (CRM, Outlook, etc.)',
+      'Exclusive legal industry insights',
+      'Early access to new features',
+      'Direct feedback channel to the development team',
     ],
     popular: false,
   },
   {
     priceId: 'price_annual_beta',
-    name: 'MagNet Pro (Annual)',
+    name: 'MagNet Pro – Annual',
     price: 500000, // $5,000.00 in cents
     currency: 'usd',
-    description: 'Save more with annual billing.',
+    description: 'Save over 15% with annual billing',
+    betaSpecial: 'Use code MAGNETBETA25 for 25% off your first year',
     features: [
-      'Annual subscription with significant savings',
-      'Advanced lead discovery and AI-powered matching',
-      'Unlimited personalized outreach templates',
-      'Premium networking event recommendations',
-      'Advanced analytics and performance tracking',
-      'Priority customer support',
-      'Access to exclusive legal industry insights',
-      'Custom integration capabilities',
-      'Dedicated account manager',
-      'Advanced reporting and insights',
-      'Beta user benefits and early access to new features',
-      'Direct feedback channel to development team'
- 
+      'Everything in MagNet Pro Monthly',
+      'Annual strategy and performance review with your account manager',
+      'Locked-in pricing and extended Beta perks',
     ],
-    popular: false,
+    popular: true,
   },
 ];
 
@@ -186,62 +175,71 @@ function PricingPlans() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {products.map((product) => (
-              <Card
-                key={product.priceId}
-                popular={product.popular}
-              >
-                {product.popular && (
-                  <Badge>
-                    <Star className="h-3 w-3 mr-1" />
-                    Most Popular
-                  </Badge>
-                )}
+            {products.map((product) => {
+              const [expanded, setExpanded] = useState<{ [key: string]: boolean }>({});
+              const isExpanded = expanded[product.priceId] || false;
+              return (
+                <Card
+                  key={product.priceId}
+                  popular={product.popular}
+                >
+                  {product.popular && (
+                    <Badge>
+                      <Star className="h-3 w-3 mr-1" />
+                      Most Popular
+                    </Badge>
+                  )}
 
-                <CardHeader>
-                  <CardTitle>{product.name}</CardTitle>
-                  <div className="text-3xl font-bold text-[#1A2E40] mt-4">
-                    {formatPrice(product.price, product.currency)}
-                    <span className="text-sm font-normal text-[#6B7280]">
-                      /{product.name.includes('Monthly') ? 'month' : 'year'}
-                    </span>
-                  </div>
-                  <p className="text-[#6B7280] text-sm mt-2">
-                    {product.description}
-                  </p>
-                  <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-4">
-                    <p className="text-green-800 text-sm font-medium">
-                      Beta User Special Pricing
+                  <CardHeader>
+                    <CardTitle>{product.name}</CardTitle>
+                    <div className="text-3xl font-bold text-[#1A2E40] mt-4">
+                      {formatPrice(product.price, product.currency)}
+                      <span className="text-sm font-normal text-[#6B7280]">
+                        /{product.name.includes('Monthly') ? 'month' : 'year'}
+                      </span>
+                    </div>
+                    <p className="text-[#6B7280] text-sm mt-2">
+                      {product.description}
                     </p>
-                    <p className="text-green-700 text-xs mt-1">
-                      {product.name.includes('Annual')
-                        ? 'Use code MAGNETBETA25 for 25% off first year'
-                        : 'Use code MAGNETBETA50 for 50% off first 3 months'
-                      }
-                    </p>
-                  </div>
-                </CardHeader>
+                    <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-4">
+                      <p className="text-green-800 text-sm font-medium">
+                        Beta User Special Pricing
+                      </p>
+                      <p className="text-green-700 text-xs mt-1">
+                        {product.betaSpecial}
+                      </p>
+                    </div>
+                  </CardHeader>
 
-                <CardContent>
-                  <div className="space-y-3 text-left">
-                    {product.features.map((feature, index) => (
+                  <CardContent>
+                    <div className="space-y-3 text-left">
+                    {(isExpanded ? product.features : product.features.slice(0, 3)).map((feature, index) => (
                       <div key={index} className="flex items-start gap-2">
                         <Check className="h-4 w-4 text-green-500 flex-shrink-0 mt-0.5" />
                         <span className="text-sm text-[#1A2E40]">{feature}</span>
                       </div>
                     ))}
-                  </div>
+                    {product.features.length > 3 && (
+                      <button
+                        className="text-[#3A6EA5] text-xs font-medium mt-2 hover:underline focus:outline-none"
+                        onClick={() => setExpanded((prev) => ({ ...prev, [product.priceId]: !isExpanded }))}
+                      >
+                        {isExpanded ? 'Show less' : `Show all ${product.features.length} features`}
+                      </button>
+                    )}
+                    </div>
 
-                  <Button
-                    className="mt-8 bg-[#3A6EA5] text-white hover:bg-[#325d8c]"
-                    onClick={handlePurchase}
-                  >
-                    Get Started
-                    <ArrowRight className="h-4 w-4 ml-2" />
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
+                    <Button
+                      className="mt-8 bg-[#3A6EA5] text-white hover:bg-[#325d8c]"
+                      onClick={handlePurchase}
+                    >
+                      Get Started
+                      <ArrowRight className="h-4 w-4 ml-2" />
+                    </Button>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
 
           <div className="text-center text-sm text-[#6B7280] max-w-2xl mx-auto mt-12">
