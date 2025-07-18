@@ -49,6 +49,46 @@ const Badge: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({ className, chil
 
 const products = [
   {
+    priceId: 'price_1RmI4sAl20PLMb1WnQkqeC1J',
+    name: 'MagNet Basic For Individuals (Monthly Plan)',
+    description: 'Basic subscription with all essential features: discover, contact, and track.',
+    mode: 'subscription',
+    price: 10000, // $100.00 in cents
+    currency: 'usd',
+    features: [
+      'Monthly subscription flexibility',
+      'Advanced lead discovery and AI-powered matching',
+      'Unlimited personalized outreach templates',
+      'Premium networking event recommendations',
+      'Advanced analytics and performance tracking',
+      'Priority customer support',
+      'Access to exclusive legal industry insights',
+      'Custom integration capabilities',
+      'Direct feedback channel to development team'
+    ],
+    popular: false,
+  },
+  {
+    priceId: 'price_1RmI6UAl20PLMb1WD8dd7QNQ',
+    name: 'MagNet Basic For Individuals (Annual Plan)',
+    description: 'Basic subscription with all essential features: discover, contact, and track.',
+    mode: 'subscription',
+    price: 100000, // $1,000.00 in cents
+    currency: 'usd',
+    features: [
+      'Monthly subscription flexibility',
+      'Advanced lead discovery and AI-powered matching',
+      'Unlimited personalized outreach templates',
+      'Premium networking event recommendations',
+      'Advanced analytics and performance tracking',
+      'Priority customer support',
+      'Access to exclusive legal industry insights',
+      'Custom integration capabilities',
+      'Direct feedback channel to development team'
+    ],
+    popular: true,
+  },
+  {
     priceId: 'price_monthly_beta',
     name: 'MagNet Pro (Monthly)',
     price: 50000, // $500.00 in cents
@@ -92,7 +132,7 @@ const products = [
       'Direct feedback channel to development team'
  
     ],
-    popular: true,
+    popular: false,
   },
 ];
 
