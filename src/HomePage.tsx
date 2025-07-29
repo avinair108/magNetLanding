@@ -341,6 +341,66 @@ function HomePage() {
           </div>
         </section>
         
+        {/* Testimonials Section */}
+        <section className="py-20 bg-[#1A2E40]/5">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <h2 className="text-3xl font-bold tracking-tight text-[#1A2E40] sm:text-4xl">
+                What Our Customers Say
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl text-lg text-[#6B7280]">
+                Hear from lawyers who have transformed their client acquisition with MagNet Agents.
+              </p>
+            </div>
+            
+            <div className="mt-16">
+              <div className="mx-auto max-w-6xl">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  {/* First Testimonial */}
+                  <div className="rounded-xl bg-white p-8 shadow-sm">
+                    <div className="flex flex-col items-center text-center">
+                      <div className="mb-6">
+                        <img 
+                          src="/jj.jpeg" 
+                          alt="Jonathan Joannides" 
+                          className="h-24 w-24 rounded-full object-cover border-4 border-[#3A6EA5]/20"
+                        />
+                      </div>
+                      <blockquote className="text-lg text-[#1A2E40] leading-relaxed">
+                        "Having supported startups and growing businesses at Wilson Sonsini and Fenwick, I know how dynamic client development can be. Now that I've launched my own Silicon Valley firm, MagNet Agents has become a core part of how we identify future clients. It simplifies research, streamlines outreach, and keeps everything organized in an elegant, intuitive way. MagNet Agents is now a key driver in our business development workflow."
+                      </blockquote>
+                      <div className="mt-6">
+                        <p className="font-semibold text-[#1A2E40]">Jonathan Joannides</p>
+                        <p className="text-[#6B7280]">AI, IP, Privacy, and Cybersecurity Lawyer at Digital Frontier Law, APC</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Second Testimonial */}
+                  <div className="rounded-xl bg-white p-8 shadow-sm">
+                    <div className="flex flex-col items-center text-center">
+                      <div className="mb-6">
+                        <img 
+                          src="/mazen.jpeg" 
+                          alt="Mazen Osman" 
+                          className="h-24 w-24 rounded-full object-cover border-4 border-[#3A6EA5]/20"
+                        />
+                      </div>
+                      <blockquote className="text-lg text-[#1A2E40] leading-relaxed">
+                        "MagNet is an essential and incredibly easy-to-use product for lawyers involved in business development. The interface is clean, intuitive, and helps us focus on winning clients."
+                      </blockquote>
+                      <div className="mt-6">
+                        <p className="font-semibold text-[#1A2E40]">Mazen Osman</p>
+                        <p className="text-[#6B7280]">Associate</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
         {/* CTA */}
         <section className="bg-[#1A2E40] py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
