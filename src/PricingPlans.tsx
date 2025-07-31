@@ -44,10 +44,27 @@ const Badge: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({ className, chil
   </div>
 );
 
-
 // --- Product Configuration (in-file) ---
 
 const products = [
+  {
+    priceId: 'price_1RqmQ7Al20PLMb1WIkg3E3xN',
+    name: 'MagNet Starter – Monthly',
+    description: 'Start building your client pipeline with essential AI tools',
+    mode: 'subscription',
+    price: 2000, // $20.00 in cents
+    currency: 'usd',
+    billingPeriod: 'monthly',
+    features: [
+      'Discover: AI-suggested client leads every month tailored to your practice',
+      'General legal market intel and selected event listings',
+      'Contact: Standard outreach templates',
+      'Calendar-based reminders and follow-up suggestions',
+      'Track: Basic activity log and summary dashboard',
+      'Support: Email support',
+      'Beta user access to new features as they roll out',
+    ],
+  },
   {
     priceId: 'price_1RmI4sAl20PLMb1WnQkqeC1J',
     name: 'MagNet Basic – Monthly',
@@ -55,6 +72,7 @@ const products = [
     mode: 'subscription',
     price: 10000, // $100.00 in cents
     currency: 'usd',
+    billingPeriod: 'monthly',
     betaSpecial: 'Use code MAGNETBETA50 for 50% off your first 3 months',
     features: [
       'Discover: Up to 10 AI-suggested client leads per month tailored to your practice',
@@ -74,6 +92,7 @@ const products = [
     mode: 'subscription',
     price: 100000, // $1,000.00 in cents
     currency: 'usd',
+    billingPeriod: 'annual',
     betaSpecial: 'Use code MAGNETBETA25 for 25% off your first year',
     features: [
       'Everything in MagNet Basic Monthly',
@@ -87,6 +106,7 @@ const products = [
     name: 'MagNet Pro – Monthly',
     price: 50000, // $500.00 in cents
     currency: 'usd',
+    billingPeriod: 'monthly',
     description: 'Unlock full AI capabilities and accelerate your business development',
     betaSpecial: 'Use code MAGNETBETA50 for 50% off your first 3 months',
     features: [
@@ -114,6 +134,7 @@ const products = [
     name: 'MagNet Pro – Annual',
     price: 500000, // $5,000.00 in cents
     currency: 'usd',
+    billingPeriod: 'annual',
     description: 'Save over 15% with annual billing',
     betaSpecial: 'Use code MAGNETBETA25 for 25% off your first year',
     features: [
@@ -128,6 +149,8 @@ const products = [
 // --- Main Pricing Component ---
 
 function PricingPlans() {
+  const [billingPeriod, setBillingPeriod] = useState<'monthly' | 'annual'>('monthly');
+  const [expanded, setExpanded] = useState<{ [key: string]: boolean }>({});
 
   const handlePurchase = () => {
     window.location.href = 'https://app.magnetlegal.co/auth';
@@ -139,6 +162,9 @@ function PricingPlans() {
       currency: currency.toUpperCase(),
     }).format(price / 100);
   };
+
+  // Filter products based on billing period
+  const filteredProducts = products.filter(product => product.billingPeriod === billingPeriod);
 
   return (
     <div className="relative flex size-full min-h-screen flex-col bg-[#FDFDFD]" style={{ fontFamily: '"Inter", sans-serif' }}>
@@ -168,15 +194,34 @@ function PricingPlans() {
             <h1 className="text-3xl font-semibold text-[#1A2E40] mb-4">
               Choose Your MagNet Plan
             </h1>
-            <p className="text-[#6B7280] max-w-2xl mx-auto">
+            <p className="text-[#6B7280] max-w-2xl mx-auto mb-8">
               Join our beta program and get exclusive early access to MagNet Agents with special pricing.
               Help us shape the future of legal business development while growing your practice.
             </p>
+            
+            {/* Billing Period Toggle */}
+            <div className="flex items-center justify-center gap-4 mb-8">
+              <span className={`text-sm font-medium ${billingPeriod === 'monthly' ? 'text-[#1A2E40]' : 'text-[#6B7280]'}`}>
+                Monthly
+              </span>
+              <button
+                onClick={() => setBillingPeriod(billingPeriod === 'monthly' ? 'annual' : 'monthly')}
+                className="relative inline-flex h-6 w-11 items-center rounded-full bg-[#3A6EA5] transition-colors"
+              >
+                <span
+                  className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                    billingPeriod === 'annual' ? 'translate-x-6' : 'translate-x-1'
+                  }`}
+                />
+              </button>
+              <span className={`text-sm font-medium ${billingPeriod === 'annual' ? 'text-[#1A2E40]' : 'text-[#6B7280]'}`}>
+                Annual
+              </span>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {products.map((product) => {
-              const [expanded, setExpanded] = useState<{ [key: string]: boolean }>({});
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {filteredProducts.map((product) => {
               const isExpanded = expanded[product.priceId] || false;
               return (
                 <Card
@@ -195,20 +240,34 @@ function PricingPlans() {
                     <div className="text-3xl font-bold text-[#1A2E40] mt-4">
                       {formatPrice(product.price, product.currency)}
                       <span className="text-sm font-normal text-[#6B7280]">
-                        /{product.name.includes('Monthly') ? 'month' : 'year'}
+                        /{billingPeriod === 'monthly' ? 'month' : 'year'}
                       </span>
                     </div>
                     <p className="text-[#6B7280] text-sm mt-2">
                       {product.description}
                     </p>
+                    {product.betaSpecial && (
                     <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-4">
+                     
                       <p className="text-green-800 text-sm font-medium">
                         Beta User Special Pricing
                       </p>
                       <p className="text-green-700 text-xs mt-1">
                         {product.betaSpecial}
                       </p>
-                    </div>
+                      
+                    </div>)}
+                    {!product.betaSpecial && (
+                    <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-4">
+                     
+                      <p className="text-green-800 text-sm font-medium">
+                        Easiest Way to Get Started
+                      </p>
+                      <p className="text-green-700 text-xs mt-1">
+                        {product.betaSpecial}
+                      </p>
+                      
+                    </div>)}
                   </CardHeader>
 
                   <CardContent>
