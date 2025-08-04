@@ -75,6 +75,7 @@ function HomePage() {
               <a href="#benefits" className="text-[#E6E6E6] hover:text-[#3A6EA5] text-sm font-medium transition">Benefits</a>
               <a href="#features" className="text-[#E6E6E6] hover:text-[#3A6EA5] text-sm font-medium transition">Features</a>
               <a href="#how-it-works" className="text-[#E6E6E6] hover:text-[#3A6EA5] text-sm font-medium transition">How It Works</a>
+              <a href="/pricing-plans" className="text-[#E6E6E6] hover:text-[#3A6EA5] text-sm font-medium transition">Pricing</a>
             </div>
             
             <div className="flex items-center gap-4">
@@ -137,6 +138,55 @@ function HomePage() {
                 >
                   Sign up
                 </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+                {/* Features Section */}
+                <section id="features" className="py-20 bg-[#1A2E40]/5">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <h2 className="text-3xl font-bold tracking-tight text-[#1A2E40] sm:text-4xl">
+                How MagNet Helps You Establish New Client Relationships
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl text-lg text-[#6B7280]">
+                Our AI-powered platform streamlines your client discovery process, making it easier than ever to find, engage, and track interactions with potential clients.
+              </p>
+            </div>
+
+            <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              {/* Feature 1 */}
+              <div className="rounded-xl bg-white p-8 shadow-sm hover:shadow-md transition">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-[#3A6EA5]/10 text-[#3A6EA5]">
+                  <Search size={24} />
+                </div>
+                <h3 className="text-xl font-semibold text-[#1A2E40]">Discover</h3>
+                <p className="mt-4 text-[#6B7280]">
+                  Intelligent scanning of legal directories, business filings, and other online sources to identify high-potential leads.
+                </p>
+              </div>
+
+              {/* Feature 2 */}
+              <div className="rounded-xl bg-white p-8 shadow-sm hover:shadow-md transition">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-[#3A6EA5]/10 text-[#3A6EA5]">
+                  <MessageSquare size={24} />
+                </div>
+                <h3 className="text-xl font-semibold text-[#1A2E40]">Contact</h3>
+                <p className="mt-4 text-[#6B7280]">
+                  Automated personalized outreach suggestions that you can use to engage prospects effectively and efficiently.
+                </p>
+              </div>
+
+              {/* Feature 3 */}
+              <div className="rounded-xl bg-white p-8 shadow-sm hover:shadow-md transition">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-[#3A6EA5]/10 text-[#3A6EA5]">
+                  <BarChart3 size={24} />
+                </div>
+                <h3 className="text-xl font-semibold text-[#1A2E40]">Track</h3>
+                <p className="mt-4 text-[#6B7280]">
+                  Automatically keep track of your business development efforts and pull comprehensive reports detailing client interactions.
+                </p>
               </div>
             </div>
           </div>
@@ -236,110 +286,7 @@ function HomePage() {
           </div>
         </section>
 
-        {/* Features Section */}
-        <section id="features" className="py-20 bg-[#1A2E40]/5">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-[#1A2E40] sm:text-4xl">
-                How MagNet Helps You Establish New Client Relationships
-              </h2>
-              <p className="mx-auto mt-4 max-w-2xl text-lg text-[#6B7280]">
-                Our AI-powered platform streamlines your client discovery process, making it easier than ever to find, engage, and track interactions with potential clients.
-              </p>
-            </div>
 
-            <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {/* Feature 1 */}
-              <div className="rounded-xl bg-white p-8 shadow-sm hover:shadow-md transition">
-                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-[#3A6EA5]/10 text-[#3A6EA5]">
-                  <Search size={24} />
-                </div>
-                <h3 className="text-xl font-semibold text-[#1A2E40]">Discover</h3>
-                <p className="mt-4 text-[#6B7280]">
-                  Intelligent scanning of legal directories, business filings, and other online sources to identify high-potential leads.
-                </p>
-              </div>
-
-              {/* Feature 2 */}
-              <div className="rounded-xl bg-white p-8 shadow-sm hover:shadow-md transition">
-                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-[#3A6EA5]/10 text-[#3A6EA5]">
-                  <MessageSquare size={24} />
-                </div>
-                <h3 className="text-xl font-semibold text-[#1A2E40]">Contact</h3>
-                <p className="mt-4 text-[#6B7280]">
-                  Automated personalized outreach suggestions that you can use to engage prospects effectively and efficiently.
-                </p>
-              </div>
-
-              {/* Feature 3 */}
-              <div className="rounded-xl bg-white p-8 shadow-sm hover:shadow-md transition">
-                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-[#3A6EA5]/10 text-[#3A6EA5]">
-                  <BarChart3 size={24} />
-                </div>
-                <h3 className="text-xl font-semibold text-[#1A2E40]">Track</h3>
-                <p className="mt-4 text-[#6B7280]">
-                  Automatically keep track of your business development efforts and pull comprehensive reports detailing client interactions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        
-        {/* How It Works Section */}
-        <section id="how-it-works" className="py-20 bg-[#FDFDFD]">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-[#1A2E40] sm:text-4xl">
-                Get Started with MagNet Today
-              </h2>
-              <p className="mx-auto mt-4 max-w-2xl text-lg text-[#6B7280]">
-                Our intuitive platform functions standalone and also seamlessly integrates with your exisiting tools, providing immediate value with minimal setup.
-              </p>
-            </div>
-            
-            <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
-              {/* Step 1: Onboard Your Profile */}
-              <div className="relative rounded-xl bg-white p-8 shadow-sm overflow-hidden border-t-4 border-[#3A6EA5]">
-                <div className="absolute -right-4 -top-4 flex h-8 w-8 items-center justify-center rounded-full bg-[#3A6EA5] text-white font-bold">
-                  1
-                </div>
-                <h3 className="text-xl font-semibold text-[#1A2E40]">Onboard Your Profile</h3>
-                <p className="mt-4 text-[#6B7280]">
-                  Quickly set up your MagNet account and provide key details about your practice, areas of expertise, and business goals.
-                </p>
-                <p className="mt-3 text-[#6B7280]">
-                  Our onboarding process is simple and secure, ensuring your information is protected at every step.
-                </p>
-              </div>
-              {/* Step 2: Set Your Preferences */}
-              <div className="relative rounded-xl bg-white p-8 shadow-sm overflow-hidden border-t-4 border-[#C9A34D]">
-                <div className="absolute -right-4 -top-4 flex h-8 w-8 items-center justify-center rounded-full bg-[#C9A34D] text-white font-bold">
-                  2
-                </div>
-                <h3 className="text-xl font-semibold text-[#1A2E40]">Set Your Preferences</h3>
-                <p className="mt-4 text-[#6B7280]">
-                  Customize your ideal client profile, practice areas of focus, and business development goals within the platform.
-                </p>
-                <p className="mt-3 text-[#6B7280]">
-                  MagNet's AI engine adapts to your preferences, continuously improving its recommendations.
-                </p>
-              </div>
-              {/* Step 3: Start Growing */}
-              <div className="relative rounded-xl bg-white p-8 shadow-sm overflow-hidden border-t-4 border-[#3A6EA5]">
-                <div className="absolute -right-4 -top-4 flex h-8 w-8 items-center justify-center rounded-full bg-[#3A6EA5] text-white font-bold">
-                  3
-                </div>
-                <h3 className="text-xl font-semibold text-[#1A2E40]">Start Growing</h3>
-                <p className="mt-4 text-[#6B7280]">
-                  Begin receiving AI-powered lead suggestions, outreach templates, and follow-up reminders tailored to your practice.
-                </p>
-                <p className="mt-3 text-[#6B7280]">
-                  Monitor your results through our comprehensive analytics dashboard and adjust your strategy as needed.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
         
         {/* Testimonials Section */}
         <section className="py-20 bg-[#1A2E40]/5">
@@ -400,6 +347,62 @@ function HomePage() {
             </div>
           </div>
         </section>
+
+        {/* How It Works Section */}
+        <section id="how-it-works" className="py-20 bg-[#FDFDFD]">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <h2 className="text-3xl font-bold tracking-tight text-[#1A2E40] sm:text-4xl">
+                Get Started with MagNet Today
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl text-lg text-[#6B7280]">
+                Our intuitive platform functions standalone and also seamlessly integrates with your exisiting tools, providing immediate value with minimal setup.
+              </p>
+            </div>
+            
+            <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
+              {/* Step 1: Onboard Your Profile */}
+              <div className="relative rounded-xl bg-white p-8 shadow-sm overflow-hidden border-t-4 border-[#3A6EA5]">
+                <div className="absolute -right-4 -top-4 flex h-8 w-8 items-center justify-center rounded-full bg-[#3A6EA5] text-white font-bold">
+                  1
+                </div>
+                <h3 className="text-xl font-semibold text-[#1A2E40]">Onboard Your Profile</h3>
+                <p className="mt-4 text-[#6B7280]">
+                  Quickly set up your MagNet account and provide key details about your practice, areas of expertise, and business goals.
+                </p>
+                <p className="mt-3 text-[#6B7280]">
+                  Our onboarding process is simple and secure, ensuring your information is protected at every step.
+                </p>
+              </div>
+              {/* Step 2: Set Your Preferences */}
+              <div className="relative rounded-xl bg-white p-8 shadow-sm overflow-hidden border-t-4 border-[#C9A34D]">
+                <div className="absolute -right-4 -top-4 flex h-8 w-8 items-center justify-center rounded-full bg-[#C9A34D] text-white font-bold">
+                  2
+                </div>
+                <h3 className="text-xl font-semibold text-[#1A2E40]">Set Your Preferences</h3>
+                <p className="mt-4 text-[#6B7280]">
+                  Customize your ideal client profile, practice areas of focus, and business development goals within the platform.
+                </p>
+                <p className="mt-3 text-[#6B7280]">
+                  MagNet's AI engine adapts to your preferences, continuously improving its recommendations.
+                </p>
+              </div>
+              {/* Step 3: Start Growing */}
+              <div className="relative rounded-xl bg-white p-8 shadow-sm overflow-hidden border-t-4 border-[#3A6EA5]">
+                <div className="absolute -right-4 -top-4 flex h-8 w-8 items-center justify-center rounded-full bg-[#3A6EA5] text-white font-bold">
+                  3
+                </div>
+                <h3 className="text-xl font-semibold text-[#1A2E40]">Start Growing</h3>
+                <p className="mt-4 text-[#6B7280]">
+                  Begin receiving AI-powered lead suggestions, outreach templates, and follow-up reminders tailored to your practice.
+                </p>
+                <p className="mt-3 text-[#6B7280]">
+                  Monitor your results through our comprehensive analytics dashboard and adjust your strategy as needed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
         
         {/* CTA */}
         <section className="bg-[#1A2E40] py-16 sm:py-20">
@@ -423,14 +426,7 @@ function HomePage() {
                   >
                     Sign up
                   </a>
-                  <a
-                    href="https://calendly.com/magnetagents/30min"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center rounded-lg bg-[#C9A34D] px-6 py-4 text-base font-medium text-[#1A2E40] hover:bg-[#b89344] transition"
-                  >
-                    Book a demo
-                  </a>
+                  
                 </div>
               </div>
             </div>
