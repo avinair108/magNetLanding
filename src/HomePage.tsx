@@ -119,7 +119,7 @@ function HomePage() {
                 <span className="block text-[#3A6EA5]">Automated</span>
               </h1>
               <p className="mt-8 max-w-2xl text-xl text-[#E6E6E6]">
-                Personalized AI agent for lawyers to establish new client relationships and drive revenue.
+                AI agents for lawyers to reach new clients
               </p>
               <div className="mt-10 flex flex-wrap gap-6 justify-center">
                 <a
