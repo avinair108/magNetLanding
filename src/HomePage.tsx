@@ -85,7 +85,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center rounded-lg border border-[#C9A34D] bg-transparent px-5 py-2.5 text-sm font-medium text-[#C9A34D] hover:bg-[#C9A34D] hover:text-[#1A2E40] transition"
               >
-                <span>Sign up</span>
+                <span>Sign up/Login</span>
               </a>
               <a 
                 href="https://calendly.com/magnetagents/30min"
@@ -136,7 +136,7 @@ function HomePage() {
                   rel="noopener noreferrer"
                   className="rounded-lg bg-[#C9A34D] px-8 py-4 text-lg font-medium text-[#1A2E40] shadow-md hover:bg-[#b89344] transition"
                 >
-                  Sign up
+                  Sign up/Login
                 </a>
               </div>
             </div>
@@ -424,7 +424,7 @@ function HomePage() {
                     rel="noopener noreferrer"
                     className="flex items-center justify-center rounded-lg border border-[#C9A34D] bg-transparent px-6 py-4 text-base font-medium text-[#C9A34D] hover:bg-[#C9A34D] hover:text-[#1A2E40] transition"
                   >
-                    Sign up
+                    Sign up/Login
                   </a>
                   
                 </div>
