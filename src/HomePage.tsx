@@ -1,10 +1,11 @@
-import { Magnet, ChevronRight, BarChart3, Search, MessageSquare, TrendingUp, Clock, Users } from 'lucide-react';
+import { Magnet, ChevronRight, BarChart3, Search, MessageSquare, TrendingUp, Clock, Users, Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 function HomePage() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const productImages = [
     '/home.png',
@@ -71,6 +72,7 @@ function HomePage() {
               <h2 className="text-xl font-semibold tracking-tight">MagNet Agents</h2>
             </a>
             
+            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
               <a href="#benefits" className="text-[#E6E6E6] hover:text-[#3A6EA5] text-sm font-medium transition">Benefits</a>
               <a href="#features" className="text-[#E6E6E6] hover:text-[#3A6EA5] text-sm font-medium transition">Features</a>
@@ -78,7 +80,8 @@ function HomePage() {
               <a href="/pricing-plans" className="text-[#E6E6E6] hover:text-[#3A6EA5] text-sm font-medium transition">Pricing</a>
             </div>
             
-            <div className="flex items-center gap-4">
+            {/* Desktop CTA Buttons */}
+            <div className="hidden md:flex items-center gap-4">
               <a
                 href="https://app.magnetlegal.co"
                 target="_blank"
@@ -96,6 +99,80 @@ function HomePage() {
                 <span>Book a demo</span>
                 <ChevronRight className="ml-1" size={16} />
               </a>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              type="button"
+              className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-[#E6E6E6] hover:text-[#3A6EA5] hover:bg-[#3A6EA5]/10 transition"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              <span className="sr-only">Open main menu</span>
+              {mobileMenuOpen ? (
+                <X className="block h-6 w-6" aria-hidden="true" />
+              ) : (
+                <Menu className="block h-6 w-6" aria-hidden="true" />
+              )}
+            </button>
+          </div>
+
+          {/* Mobile Menu */}
+          <div className={`md:hidden transition-all duration-300 ease-in-out ${mobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+            <div className="px-4 pb-4 pt-2 space-y-4 bg-[#1A2E40] border-t border-[#3A6EA5]/20">
+              {/* Mobile Navigation Links */}
+              <div className="flex flex-col space-y-3">
+                <a 
+                  href="#benefits" 
+                  className="text-[#E6E6E6] hover:text-[#3A6EA5] text-base font-medium transition py-2 border-b border-[#3A6EA5]/10"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Benefits
+                </a>
+                <a 
+                  href="#features" 
+                  className="text-[#E6E6E6] hover:text-[#3A6EA5] text-base font-medium transition py-2 border-b border-[#3A6EA5]/10"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Features
+                </a>
+                <a 
+                  href="#how-it-works" 
+                  className="text-[#E6E6E6] hover:text-[#3A6EA5] text-base font-medium transition py-2 border-b border-[#3A6EA5]/10"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  How It Works
+                </a>
+                <a 
+                  href="/pricing-plans" 
+                  className="text-[#E6E6E6] hover:text-[#3A6EA5] text-base font-medium transition py-2 border-b border-[#3A6EA5]/10"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Pricing
+                </a>
+              </div>
+              
+              {/* Mobile CTA Buttons */}
+              <div className="flex flex-col space-y-3 pt-4">
+                <a
+                  href="https://app.magnetlegal.co"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center rounded-lg border border-[#C9A34D] bg-transparent px-5 py-3 text-base font-medium text-[#C9A34D] hover:bg-[#C9A34D] hover:text-[#1A2E40] transition"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <span>Sign up/Login</span>
+                </a>
+                <a 
+                  href="https://calendly.com/magnetagents/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center rounded-lg bg-[#3A6EA5] px-5 py-3 text-base font-medium text-white shadow-sm hover:bg-[#325d8c] transition"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <span>Book a demo</span>
+                  <ChevronRight className="ml-1" size={16} />
+                </a>
+              </div>
             </div>
           </div>
         </header>
