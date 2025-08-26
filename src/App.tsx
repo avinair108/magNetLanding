@@ -6,6 +6,7 @@ import PricingPlans from './PricingPlans';
 import TermsOfService from './TermsOfService';
 import Newsletter from './Newsletter';
 import ClientMatch from './ClientMatch';
+import Press from './Press';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div className="relative flex size-full min-h-screen flex-col bg-[#FDFDFD]" style={{ fontFamily: '"Inter", sans-serif' }}>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/press" element={<Press />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/pricing-plans" element={<PricingPlans />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
