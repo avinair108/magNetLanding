@@ -224,6 +224,18 @@ function HomePage() {
                   Sign up/Login
                 </a>
               </div>
+              
+              {/* As Featured In Banner */}
+              <div className="mt-16 text-center">
+                <p className="text-sm font-medium text-[#E6E6E6] mb-4">As featured in</p>
+                <div className="flex justify-center">
+                  <img 
+                    src="/lawdotcom.png" 
+                    alt="Law.com" 
+                    className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
