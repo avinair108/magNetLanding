@@ -8,10 +8,12 @@ function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const productImages = [
-    '/home.png',
+    '/news.png',
     '/discover.png',
-    '/outreach.png',
-    '/analytics.png',
+    '/contact.png',
+    '/strategy.png',
+    '/events.png',
+    '/track.png',
   ];
 
   const handleImageClick = () => {
