@@ -240,10 +240,44 @@ function HomePage() {
               </div>
             </div>
           </div>
+                </section>
+
+        {/* Product Demo Video Section */}
+        <section className="py-20 bg-[#FDFDFD]">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold tracking-tight text-[#1A2E40] sm:text-4xl">
+                See MagNet in Action
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl text-lg text-[#6B7280]">
+                Watch how our AI-powered platform streamlines client acquisition for lawyers
+              </p>
+            </div>
+            
+            <div className="flex justify-center">
+              <div className="relative w-full max-w-4xl">
+                <div className="relative" style={{ paddingBottom: '56.25%' }}>
+                  <iframe
+                    src="https://www.loom.com/embed/2e8486e69f084a559ae8838e065f9ebe?sid=20f89266-4c16-4ed2-a0be-4643375a660d"
+                    frameBorder="0"
+                    allowFullScreen
+                    className="absolute top-0 left-0 w-full h-full rounded-xl shadow-2xl"
+                    title="MagNet Agents Product Demo"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-12 text-center">
+              <p className="text-[#6B7280] text-sm">
+                Watch the full demo to see how MagNet can transform your client acquisition process
+              </p>
+            </div>
+          </div>
         </section>
 
-                {/* Features Section */}
-                <section id="features" className="py-20 bg-[#1A2E40]/5">
+        {/* Features Section */}
+        <section id="features" className="py-20 bg-[#1A2E40]/5">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h2 className="text-3xl font-bold tracking-tight text-[#1A2E40] sm:text-4xl">
