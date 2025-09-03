@@ -209,6 +209,14 @@ function HomePage() {
                 AI agents for lawyers to reach new clients
               </p>
               <div className="mt-10 flex flex-wrap gap-6 justify-center">
+              <a
+                  href="https://app.magnetlegal.co"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg bg-[#C9A34D] px-8 py-4 text-lg font-medium text-[#1A2E40] shadow-md hover:bg-[#b89344] transition"
+                >
+                  Sign up/Login
+                </a>
                 <a
                   href="https://calendly.com/magnetagents/30min"
                   target="_blank"
@@ -217,14 +225,7 @@ function HomePage() {
                 >
                   Book a demo
                 </a>
-                <a
-                  href="https://app.magnetlegal.co"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-lg bg-[#C9A34D] px-8 py-4 text-lg font-medium text-[#1A2E40] shadow-md hover:bg-[#b89344] transition"
-                >
-                  Sign up/Login
-                </a>
+                
               </div>
               
               {/* As Featured In Banner */}
