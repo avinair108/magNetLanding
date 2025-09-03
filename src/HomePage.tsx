@@ -208,37 +208,53 @@ function HomePage() {
               <p className="mt-8 max-w-2xl text-xl text-[#E6E6E6]">
                 AI agents for lawyers to reach new clients
               </p>
-              <div className="mt-10 flex flex-wrap gap-6 justify-center">
-              <a
-                  href="https://app.magnetlegal.co"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-lg bg-[#C9A34D] px-8 py-4 text-lg font-medium text-[#1A2E40] shadow-md hover:bg-[#b89344] transition"
-                >
-                  Sign up/Login
-                </a>
-                <a
-                  href="https://calendly.com/magnetagents/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-lg bg-[#3A6EA5] px-8 py-4 text-lg font-medium text-white shadow-md hover:bg-[#325d8c] focus:outline-none focus:ring-2 focus:ring-[#3A6EA5] focus:ring-offset-2 focus:ring-offset-[#1A2E40] transition"
-                >
-                  Book a demo
-                </a>
-                
-              </div>
-              
-              {/* As Featured In Banner */}
-              <div className="mt-16 text-center">
-                <p className="text-sm font-medium text-[#E6E6E6] mb-4">As featured in</p>
-                <div className="flex justify-center">
-                  <img 
-                    src="/lawdotcom.png" 
-                    alt="Law.com" 
-                    className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
-                  />
+                              <div className="mt-10 flex flex-wrap gap-6 justify-center">
+                  <a
+                    href="https://app.magnetlegal.co"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-lg bg-[#C9A34D] px-8 py-4 text-lg font-medium text-[#1A2E40] shadow-md hover:bg-[#b89344] transition"
+                  >
+                    Sign up/Login
+                  </a>
+                  <a
+                    href="https://calendly.com/magnetagents/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-lg bg-[#3A6EA5] px-8 py-4 text-lg font-medium text-white shadow-md hover:bg-[#325d8c] focus:outline-none focus:ring-2 focus:ring-[#3A6EA5] focus:ring-offset-2 focus:ring-offset-[#1A2E40] transition"
+                  >
+                    Book a demo
+                  </a>
                 </div>
-              </div>
+                
+                
+              
+                              {/* As Featured In Banner */}
+                <div className="mt-16 text-center">
+                  <p className="text-sm font-medium text-[#E6E6E6] mb-4">As featured in</p>
+                  <div className="flex justify-center items-center gap-8">
+                    <img 
+                      src="/lawdotcom.png" 
+                      alt="Law.com" 
+                      className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                    />
+                    <img 
+                      src="/Legal-Tech-Blog-Logo.png" 
+                      alt="Legal Tech Blog" 
+                      className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                    />
+                    <img 
+                      src="/Legalverse-Media-Logo-Yoast1200.png" 
+                      alt="Legalverse Media" 
+                      className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                    />
+                    <img 
+                      src="/artificial-lawyer-logo.png" 
+                      alt="Artificial Lawyer" 
+                      className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                </div>
             </div>
           </div>
                 </section>
