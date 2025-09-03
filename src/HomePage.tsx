@@ -269,9 +269,19 @@ function HomePage() {
             </div>
             
             <div className="mt-12 text-center">
-              <p className="text-[#6B7280] text-sm">
+              <p className="text-[#6B7280] text-sm mb-8">
                 Watch the full demo to see how MagNet can transform your client acquisition process
               </p>
+              <div className="flex justify-center">
+                <a
+                  href="https://app.magnetlegal.co"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-lg bg-[#3A6EA5] px-8 py-3 text-base font-medium text-white shadow-md hover:bg-[#325d8c] focus:outline-none focus:ring-2 focus:ring-[#3A6EA5] focus:ring-offset-2 transition"
+                >
+                  Sign Up Now
+                </a>
+              </div>
             </div>
           </div>
         </section>
