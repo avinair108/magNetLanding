@@ -16,6 +16,13 @@ function HomePage() {
     '/track.png',
   ];
 
+  const featuredImages = [
+    { src: '/lawdotcom.png', alt: 'Law.com' },
+    { src: '/Legal-Tech-Blog-Logo.png', alt: 'Legal Tech Blog' },
+    { src: '/Legalverse-Media-Logo-Yoast1200.png', alt: 'Legalverse Media' },
+    { src: '/artificial-lawyer-logo.png', alt: 'Artificial Lawyer' },
+  ];
+
   const handleImageClick = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % productImages.length);
   };
@@ -60,6 +67,7 @@ function HomePage() {
 
     return () => clearInterval(interval);
   }, [productImages.length]);
+
 
   return (
     <div className="relative flex size-full min-h-screen flex-col bg-[#FDFDFD] overflow-x-hidden" style={{ fontFamily: '"Inter", sans-serif' }}>
@@ -188,7 +196,7 @@ function HomePage() {
         </header>
 
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-[#1A2E40] h-screen flex items-center">
+        <section className="relative overflow-hidden bg-[#1A2E40] min-h-screen flex items-center">
           <div className="absolute inset-0 opacity-20 mix-blend-overlay">
             <svg className="h-full w-full" xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
               <path fill="none" stroke="#C9A34D" strokeWidth="1.5" d="M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63"></path>
@@ -199,16 +207,18 @@ function HomePage() {
             </svg>
           </div>
           
-          <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
-            <div className="flex flex-col items-center text-center">
-              <h1 className="text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
-                Client Acquisition,
-                <span className="block text-[#3A6EA5]">Automated</span>
-              </h1>
-              <p className="mt-8 max-w-2xl text-xl text-[#E6E6E6]">
-                AI agents for lawyers to reach new clients
-              </p>
-                              <div className="mt-10 flex flex-wrap gap-6 justify-center">
+          <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full py-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Left side - Text content */}
+              <div className="text-center lg:text-left">
+                <h1 className="text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
+                  Client Acquisition,
+                  <span className="block text-[#3A6EA5]">Automated</span>
+                </h1>
+                <p className="mt-8 max-w-2xl text-xl text-[#E6E6E6]">
+                  AI agents for lawyers to reach new clients
+                </p>
+                <div className="mt-10 flex flex-wrap gap-6 justify-center lg:justify-start">
                   <a
                     href="https://app.magnetlegal.co"
                     target="_blank"
@@ -217,47 +227,76 @@ function HomePage() {
                   >
                     Sign up/Login
                   </a>
+                </div>
+              </div>
+
+                            {/* Right side - Image carousel */}
+              <div className="relative">
+                <img
+                  src={productImages[currentImageIndex]}
+                  alt="MagNet Platform Screenshot"
+                  className="rounded-xl shadow-lg z-0 w-full h-auto transition-opacity duration-500 cursor-pointer"
+                  onClick={handleImageClick}
+                />
+                <div className="absolute -bottom-6 -right-6 hidden lg:block">
+                  
+                </div>
+                <div className="flex justify-center gap-2 mt-4">
+                  {productImages.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentImageIndex(index)}
+                      className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                        index === currentImageIndex 
+                          ? 'bg-[#3A6EA5] w-4' 
+                          : 'bg-[#E6E6E6] hover:bg-[#3A6EA5]/50'
+                      }`}
+                      aria-label={`Go to image ${index + 1}`}
+                    />
+                  ))}
+                </div>
+                
+                {/* Book a demo button - under the carousel */}
+                <div className="mt-8 text-center">
+                  <p className="text-base font-medium text-[#E6E6E6] mb-4">Questions? We're glad to help</p>
                   <a
                     href="https://calendly.com/magnetagents/30min"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-lg bg-[#3A6EA5] px-8 py-4 text-lg font-medium text-white shadow-md hover:bg-[#325d8c] focus:outline-none focus:ring-2 focus:ring-[#3A6EA5] focus:ring-offset-2 focus:ring-offset-[#1A2E40] transition"
+                    className="inline-flex items-center justify-center rounded-lg bg-[#3A6EA5] px-8 py-4 text-lg font-medium text-white shadow-md hover:bg-[#325d8c] focus:outline-none focus:ring-2 focus:ring-[#3A6EA5] focus:ring-offset-2 focus:ring-offset-[#1A2E40] transition"
                   >
                     Book a demo
                   </a>
                 </div>
-                
-                
-              
-                              {/* As Featured In Banner */}
-                <div className="mt-16 text-center">
-                  <p className="text-sm font-medium text-[#E6E6E6] mb-4">As featured in</p>
-                  <div className="flex justify-center items-center gap-8">
-                    <img 
-                      src="/lawdotcom.png" 
-                      alt="Law.com" 
-                      className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
-                    />
-                    <img 
-                      src="/Legal-Tech-Blog-Logo.png" 
-                      alt="Legal Tech Blog" 
-                      className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
-                    />
-                    <img 
-                      src="/Legalverse-Media-Logo-Yoast1200.png" 
-                      alt="Legalverse Media" 
-                      className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
-                    />
-                    <img 
-                      src="/artificial-lawyer-logo.png" 
-                      alt="Artificial Lawyer" 
-                      className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
-                    />
-                  </div>
-                </div>
+              </div>
             </div>
+
+            {/* As Featured In Banner */}
+            <div className="mt-28 text-center">
+              <p className="text-base font-medium text-[#E6E6E6] mb-6">As featured in</p>
+              <div className="overflow-hidden">
+                <div className="flex" style={{
+                  animation: 'scroll 40s linear infinite',
+                  width: 'calc(100% * 8)'
+                }}>
+                  {/* Create 8 copies for seamless loop */}
+                  {[...Array(20)].map((_, setIndex) => 
+                    featuredImages.map((image, index) => (
+                      <div key={`set-${setIndex}-${index}`} className="flex-shrink-0 mx-2" style={{ width: '150px' }}>
+                        <img 
+                          src={image.src}
+                          alt={image.alt}
+                          className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity mx-auto"
+                        />
+                      </div>
+                    ))
+                  )}
+                </div>
+              </div>
+            </div>
+
           </div>
-                </section>
+        </section>
 
         {/* Product Demo Video Section */}
         <section className="py-20 bg-[#FDFDFD]">
@@ -396,34 +435,8 @@ function HomePage() {
               </div>
             </div>
             
-            <div className="mt-16 grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-12">
-              <div className="relative">
-                <img
-                  src={productImages[currentImageIndex]}
-                  alt="MagNet Platform Screenshot"
-                  className="rounded-xl shadow-lg z-0 w-full h-auto transition-opacity duration-500 cursor-pointer"
-                  onClick={handleImageClick}
-                />
-                <div className="absolute -bottom-6 -right-6 hidden lg:block">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#C9A34D] text-[#1A2E40]">
-                    <Users size={24} />
-                  </div>
-                </div>
-                <div className="flex justify-center gap-2 mt-4">
-                  {productImages.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => setCurrentImageIndex(index)}
-                      className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                        index === currentImageIndex 
-                          ? 'bg-[#3A6EA5] w-4' 
-                          : 'bg-[#E6E6E6] hover:bg-[#3A6EA5]/50'
-                      }`}
-                      aria-label={`Go to image ${index + 1}`}
-                    />
-                  ))}
-                </div>
-              </div>
+            {/* <div className="mt-16 grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-12">
+              
               
               <div className="flex flex-col justify-center">
                 <h3 className="text-2xl font-bold text-[#1A2E40]">Designed Specifically for Lawyers</h3>
@@ -442,7 +455,7 @@ function HomePage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
