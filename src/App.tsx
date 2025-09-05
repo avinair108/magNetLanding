@@ -27,7 +27,7 @@ function App() {
           <Route path="/" element={
             <footer className="bg-[#FDFDFD] border-t border-[#E6E6E6]">
               <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
-                <div className="md:flex md:items-center md:justify-between">
+                <div className="md:flex md:items-start md:justify-between">
                   <div className="flex items-center gap-4 text-[#1A2E40]">
                     <div className="text-[#3A6EA5]">
                       <Magnet size={20} />
@@ -39,40 +39,38 @@ function App() {
                       className="h-10 w-auto"
                     />
                   </div>
-                  <div className="mt-8 md:mt-0 flex flex-col md:flex-row items-center gap-4">
-                    <div className="flex gap-6 text-sm">
-                      <Link 
-                        to="/privacy-policy" 
-                        className="text-[#6B7280] hover:text-[#3A6EA5] transition"
-                      >
-                        Privacy Policy
-                      </Link>
-                      <Link 
-                        to="/pricing-plans" 
-                        className="text-[#6B7280] hover:text-[#3A6EA5] transition"
-                      >
-                        Pricing Plans
-                      </Link>
-                      <Link 
-                        to="/terms-of-service" 
-                        className="text-[#6B7280] hover:text-[#3A6EA5] transition"
-                      >
-                        Terms of Service
-                      </Link>
-                      <Link 
-                        to="/newsletter" 
-                        className="text-[#6B7280] hover:text-[#3A6EA5] transition"
-                      >
-                        Newsletter
-                      </Link>
-                      <Link 
-                        to="/client-match" 
-                        className="text-[#6B7280] hover:text-[#3A6EA5] transition"
-                      >
-                        Client Match
-                      </Link>
+                  <div className="mt-8 md:mt-0 flex flex-col md:flex-row items-start justify-between w-full md:ml-12">
+                    <div className="flex flex-col md:flex-row gap-8 text-sm">
+                      <div className="flex flex-col gap-2 items-start">
+                        <Link 
+                          to="/newsletter" 
+                          className="text-[#6B7280] hover:text-[#3A6EA5] transition"
+                        >
+                          Newsletter
+                        </Link>
+                        <Link 
+                          to="/press" 
+                          className="text-[#6B7280] hover:text-[#3A6EA5] transition ml-4"
+                        >
+                          Press
+                        </Link>
+                      </div>
+                      <div className="flex flex-col gap-2 items-start">
+                        <Link 
+                          to="/terms-of-service" 
+                          className="text-[#6B7280] hover:text-[#3A6EA5] transition"
+                        >
+                          Terms of Service
+                        </Link>
+                        <Link 
+                          to="/privacy-policy" 
+                          className="text-[#6B7280] hover:text-[#3A6EA5] transition ml-4"
+                        >
+                          Privacy Policy
+                        </Link>
+                      </div>
                     </div>
-                    <p className="text-sm text-[#6B7280]">
+                    <p className="text-sm text-[#6B7280] mt-4 md:mt-0">
                       &copy; {new Date().getFullYear()} MagNet Agents. All rights reserved.
                     </p>
                   </div>

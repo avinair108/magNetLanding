@@ -88,7 +88,6 @@ function HomePage() {
               <a href="#features" className="text-[#E6E6E6] hover:text-[#3A6EA5] text-sm font-medium transition">Features</a>
               <a href="#how-it-works" className="text-[#E6E6E6] hover:text-[#3A6EA5] text-sm font-medium transition">How It Works</a>
               <a href="/pricing-plans" className="text-[#E6E6E6] hover:text-[#3A6EA5] text-sm font-medium transition">Pricing</a>
-              <a href="/press" className="text-[#E6E6E6] hover:text-[#3A6EA5] text-sm font-medium transition">Press</a>
             </div>
             
             {/* Desktop CTA Buttons */}
@@ -159,13 +158,6 @@ function HomePage() {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Pricing
-                </a>
-                <a 
-                  href="/press" 
-                  className="text-[#E6E6E6] hover:text-[#3A6EA5] text-base font-medium transition py-2 border-b border-[#3A6EA5]/10"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Press
                 </a>
               </div>
               
@@ -461,32 +453,7 @@ function HomePage() {
 
 
         
-        {/* Press Section */}
-        <section className="py-16 bg-[#FDFDFD]">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-[#1A2E40] sm:text-4xl mb-6">
-                Press & Media
-              </h2>
-              <div className="flex flex-col items-center justify-center gap-4">
-                <a
-                  href="https://www.law.com/" // TODO: Replace with actual article URL if available
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 px-6 py-3 rounded-lg border border-[#E6E6E6] bg-white shadow-sm hover:shadow-md transition"
-                  style={{ minWidth: 220 }}
-                >
-                  {/* If you have the Law.com logo, replace the text below with an <img> tag */}
-                  <span className="text-lg font-semibold text-[#1A2E40]">Featured in</span>
-                  <span className="text-xl font-bold text-[#3A6EA5] tracking-wide">Law.com</span>
-                </a>
-                <p className="text-[#6B7280] mt-2 max-w-xl">
-                  MagNet Agents was recently featured in Law.com for our innovative approach to AI-powered client acquisition for lawyers.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+       
 
         {/* Testimonials Section */}
         <section className="py-20 bg-[#1A2E40]/5">
