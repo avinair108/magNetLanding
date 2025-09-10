@@ -48,17 +48,17 @@ const Badge: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({ className, chil
 
 const products = [
   {
-    priceId: 'price_1RqmQ7Al20PLMb1WIkg3E3xN',
+    priceId: 'price_1S5TGrAl20PLMb1WXedFWU80',
     name: 'MagNet Starter – Monthly',
     description: 'Start building your client pipeline with essential AI tools',
     mode: 'subscription',
-    price: 2000, // $20.00 in cents
+    price: 5900, // $59.00 in cents
     currency: 'usd',
     billingPeriod: 'monthly',
     features: [
-      'Discover: AI-suggested client leads every month tailored to your practice',
+      'Discover: 5 AI-suggested client leads every week tailored to your practice',
       'General legal market intel and selected event listings',
-      'Contact: Standard outreach templates',
+      'Contact: Tailored outreach templates',
       'Calendar-based reminders and follow-up suggestions',
       'Track: Basic activity log and summary dashboard',
       'Support: Email support',
@@ -66,25 +66,61 @@ const products = [
     ],
   },
   {
-    priceId: 'price_1RmI4sAl20PLMb1WnQkqeC1J',
-    name: 'MagNet Basic – Monthly',
-    description: 'Start building your client pipeline with essential AI tools',
+    priceId: 'price_1S5THKAl20PLMb1WqaIdBLQ1',
+    name: 'MagNet Pro – Monthly',
+    description: 'Enhance your client pipeline with unlimited access to AI tools',
     mode: 'subscription',
-    price: 10000, // $100.00 in cents
+    price: 25900, // $259.00 in cents
     currency: 'usd',
     billingPeriod: 'monthly',
-    betaSpecial: 'Use code MAGNETBETA50 for 50% off your first 3 months',
     features: [
-      'Discover: Up to 10 AI-suggested client leads per month tailored to your practice',
+      'Discover: Up to 5 AI-suggested client leads per DAY tailored to your practice',
       'General legal market intel and selected event listings',
-      'Contact: Standard outreach templates',
+      'Contact: Unlimited AI powered, targeted outreach templates',
       'Calendar-based reminders and follow-up suggestions',
       'Track: Basic activity log and summary dashboard',
       'Support: Email support',
       'Beta user access to new features as they roll out',
     ],
-    popular: false,
   },
+  // {
+  //   priceId: 'price_1RqmQ7Al20PLMb1WIkg3E3xN',
+  //   name: 'MagNet Starter – Monthly',
+  //   description: 'Start building your client pipeline with essential AI tools',
+  //   mode: 'subscription',
+  //   price: 2000, // $20.00 in cents
+  //   currency: 'usd',
+  //   billingPeriod: 'monthly',
+  //   features: [
+  //     'Discover: AI-suggested client leads every month tailored to your practice',
+  //     'General legal market intel and selected event listings',
+  //     'Contact: Standard outreach templates',
+  //     'Calendar-based reminders and follow-up suggestions',
+  //     'Track: Basic activity log and summary dashboard',
+  //     'Support: Email support',
+  //     'Beta user access to new features as they roll out',
+  //   ],
+  // },
+  // {
+  //   priceId: 'price_1RmI4sAl20PLMb1WnQkqeC1J',
+  //   name: 'MagNet Basic – Monthly',
+  //   description: 'Start building your client pipeline with essential AI tools',
+  //   mode: 'subscription',
+  //   price: 10000, // $100.00 in cents
+  //   currency: 'usd',
+  //   billingPeriod: 'monthly',
+  //   betaSpecial: 'Use code MAGNETBETA50 for 50% off your first 3 months',
+  //   features: [
+  //     'Discover: Up to 10 AI-suggested client leads per month tailored to your practice',
+  //     'General legal market intel and selected event listings',
+  //     'Contact: Standard outreach templates',
+  //     'Calendar-based reminders and follow-up suggestions',
+  //     'Track: Basic activity log and summary dashboard',
+  //     'Support: Email support',
+  //     'Beta user access to new features as they roll out',
+  //   ],
+  //   popular: false,
+  // },
   {
     priceId: 'price_1RmI6UAl20PLMb1WD8dd7QNQ',
     name: 'MagNet Basic – Annual',
@@ -101,34 +137,34 @@ const products = [
     ],
     popular: false,
   },
-  {
-    priceId: 'price_1RhXOjAl20PLMb1WzJbeXc59',
-    name: 'MagNet Pro – Monthly',
-    price: 50000, // $500.00 in cents
-    currency: 'usd',
-    billingPeriod: 'monthly',
-    description: 'Unlock full AI capabilities and accelerate your business development',
-    betaSpecial: 'Use code MAGNETBETA50 for 50% off your first 3 months',
-    features: [
-      'Includes everything in MagNet Basic',
-      'Discover: Unlimited AI-matched client leads, continuously updated based on your practice, preferences, and market shifts',
-      'Practice-specific legal intel reports',
-      'Curated, high-value networking event recommendations',
-      'Contact: Fully personalized outreach strategies and AI-written messaging for both LinkedIn and email',
-      'Custom outreach playbooks tailored to your niche',
-      'Smart sequencing and timing for follow-ups',
-      'Track: Automatic logging of every client interaction',
-      'Exportable business development reports (PDF/CSV)',
-      'ROI dashboard to track which efforts lead to new clients',
-      'Support & Services: Priority support',
-      'Dedicated account manager',
-      'Custom integration capabilities (CRM, Outlook, etc.)',
-      'Exclusive legal industry insights',
-      'Early access to new features',
-      'Direct feedback channel to the development team',
-    ],
-    popular: false,
-  },
+  // {
+  //   priceId: 'price_1RhXOjAl20PLMb1WzJbeXc59',
+  //   name: 'MagNet Pro – Monthly',
+  //   price: 50000, // $500.00 in cents
+  //   currency: 'usd',
+  //   billingPeriod: 'monthly',
+  //   description: 'Unlock full AI capabilities and accelerate your business development',
+  //   betaSpecial: 'Use code MAGNETBETA50 for 50% off your first 3 months',
+  //   features: [
+  //     'Includes everything in MagNet Basic',
+  //     'Discover: Unlimited AI-matched client leads, continuously updated based on your practice, preferences, and market shifts',
+  //     'Practice-specific legal intel reports',
+  //     'Curated, high-value networking event recommendations',
+  //     'Contact: Fully personalized outreach strategies and AI-written messaging for both LinkedIn and email',
+  //     'Custom outreach playbooks tailored to your niche',
+  //     'Smart sequencing and timing for follow-ups',
+  //     'Track: Automatic logging of every client interaction',
+  //     'Exportable business development reports (PDF/CSV)',
+  //     'ROI dashboard to track which efforts lead to new clients',
+  //     'Support & Services: Priority support',
+  //     'Dedicated account manager',
+  //     'Custom integration capabilities (CRM, Outlook, etc.)',
+  //     'Exclusive legal industry insights',
+  //     'Early access to new features',
+  //     'Direct feedback channel to the development team',
+  //   ],
+  //   popular: false,
+  // },
   {
     priceId: 'price_1RhXMoAl20PLMb1W5XMcAuIx',
     name: 'MagNet Pro – Annual',
@@ -261,7 +297,7 @@ function PricingPlans() {
                     <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-4">
                      
                       <p className="text-green-800 text-sm font-medium">
-                        Easiest Way to Get Started
+                        Easy Way to Get Started!
                       </p>
                       <p className="text-green-700 text-xs mt-1">
                         {product.betaSpecial}
