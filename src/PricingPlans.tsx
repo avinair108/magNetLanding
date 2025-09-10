@@ -71,7 +71,7 @@ const products = [
     name: 'MagNet Pro – Monthly',
     description: 'Maximize BD efficiency and capture new clients early.',
     mode: 'subscription',
-    price: 25900, // $259.00 in cents
+    price: 24900, // $259.00 in cents
    
     currency: 'usd',
     billingPeriod: 'monthly',
