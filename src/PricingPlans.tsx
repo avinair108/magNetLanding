@@ -97,7 +97,6 @@ const products = [
     betaSpecial: 'Save 20%',
     billingPeriod: 'annual',
     currency: 'usd',
-    popular: true,
     features: [
       '5 matched Leads per week',
       'Weekly market intel reports & LinkedIn Post Suggestion',
@@ -115,6 +114,7 @@ const products = [
     mode: 'subscription',
     price: 239000, // $2390.00 in cents
     billingPeriod: 'annual',
+    popular: true,
     betaSpecial: 'Save 20%',
     currency: 'usd',
     features: [
