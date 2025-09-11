@@ -7,7 +7,7 @@ import { Check, Star, ArrowRight, Magnet, ArrowLeft } from 'lucide-react';
 // In a real app, these would be in separate files, likely using a UI library.
 
 const Card: React.FC<React.HTMLAttributes<HTMLDivElement> & { popular?: boolean }> = ({ className, children, popular, ...props }) => (
-  <div className={`bg-white relative rounded-2xl shadow-lg border border-[#E6E6E6] p-8 flex flex-col ${popular ? 'ring-2 ring-[#3A6EA5] scale-105' : ''} ${className}`} {...props}>
+  <div className={`bg-white relative rounded-2xl shadow-lg border border-[#E6E6E6] p-8 flex flex-col w-full max-w-sm ${popular ? 'ring-2 ring-[#3A6EA5] scale-105' : ''} ${className}`} {...props}>
     {children}
   </div>
 );
@@ -204,9 +204,22 @@ function PricingPlans() {
                 Annual
               </span>
             </div>
+            
+            {/* Billing Cycle Information */}
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 max-w-2xl mx-auto mb-8">
+              <p className="text-blue-800 text-sm font-medium text-center">
+                💡 Billing Information
+              </p>
+              <p className="text-blue-700 text-xs mt-1 text-center">
+                {billingPeriod === 'monthly' 
+                  ? 'Monthly billing - Cancel anytime. Annual plans save 20% with our beta special pricing.'
+                  : 'Annual billing - Save 20% compared to monthly plans. Billed once per year with our beta special pricing.'
+                }
+              </p>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
             {filteredProducts.map((product) => {
               const isExpanded = expanded[product.priceId] || false;
               return (
@@ -229,6 +242,14 @@ function PricingPlans() {
                         /{billingPeriod === 'monthly' ? 'month' : 'year'}
                       </span>
                     </div>
+                    {billingPeriod === 'annual' && (
+                      <div className="text-sm text-[#6B7280] mt-1">
+                        <span className="text-green-600 font-medium">
+                          {formatPrice(Math.round(product.price / 12), product.currency)}/month
+                        </span>
+                        <span className="text-xs ml-1">(billed annually)</span>
+                      </div>
+                    )}
                     <p className="text-[#6B7280] text-sm mt-2">
                       {product.description}
                     </p>
