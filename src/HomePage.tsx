@@ -468,11 +468,11 @@ function HomePage() {
             </div>
             
             <div className="mt-16">
-              <div className="mx-auto max-w-6xl">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="mx-auto max-w-7xl">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {/* First Testimonial */}
-                  <div className="rounded-xl bg-white p-8 shadow-sm">
-                    <div className="flex flex-col items-center text-center">
+                  <div className="rounded-xl bg-white p-8 shadow-sm h-full flex flex-col">
+                    <div className="flex flex-col items-center text-center h-full">
                       <div className="mb-6">
                         <img 
                           src="/jj.jpeg" 
@@ -480,7 +480,7 @@ function HomePage() {
                           className="h-24 w-24 rounded-full object-cover border-4 border-[#3A6EA5]/20"
                         />
                       </div>
-                      <blockquote className="text-lg text-[#1A2E40] leading-relaxed">
+                      <blockquote className="text-lg text-[#1A2E40] leading-relaxed flex-1">
                         "Having supported startups and growing businesses at Wilson Sonsini and Fenwick, I know how dynamic client development can be. Now that I've launched my own Silicon Valley firm, MagNet Agents has become a core part of how we identify future clients. It simplifies research, streamlines outreach, and keeps everything organized in an elegant, intuitive way. MagNet Agents is now a key driver in our business development workflow."
                       </blockquote>
                       <div className="mt-6">
@@ -491,8 +491,8 @@ function HomePage() {
                   </div>
 
                   {/* Second Testimonial */}
-                  <div className="rounded-xl bg-white p-8 shadow-sm">
-                    <div className="flex flex-col items-center text-center">
+                  <div className="rounded-xl bg-white p-8 shadow-sm h-full flex flex-col">
+                    <div className="flex flex-col items-center text-center h-full">
                       <div className="mb-6">
                         <img 
                           src="/mazen.jpeg" 
@@ -500,12 +500,30 @@ function HomePage() {
                           className="h-24 w-24 rounded-full object-cover border-4 border-[#3A6EA5]/20"
                         />
                       </div>
-                      <blockquote className="text-lg text-[#1A2E40] leading-relaxed">
+                      <blockquote className="text-lg text-[#1A2E40] leading-relaxed flex-1">
                         "MagNet is an essential and incredibly easy-to-use product for lawyers involved in business development. The interface is clean, intuitive, and helps us focus on winning clients."
                       </blockquote>
                       <div className="mt-6">
                         <p className="font-semibold text-[#1A2E40]">Mazen Osman</p>
                         <p className="text-[#6B7280]">Associate</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Third Testimonial */}
+                  <div className="rounded-xl bg-white p-8 shadow-sm h-full flex flex-col">
+                    <div className="flex flex-col items-center text-center h-full">
+                      <div className="mb-6">
+                        <div className="h-24 w-24 rounded-full bg-[#3A6EA5] flex items-center justify-center border-4 border-[#3A6EA5]/20">
+                          <span className="text-3xl font-semibold text-white">TG</span>
+                        </div>
+                      </div>
+                      <blockquote className="text-lg text-[#1A2E40] leading-relaxed flex-1">
+                        "I've added MagNet to my business development routine and it's been a game-changer. I'm adding contacts I meet at events directly into MagNet, adding notes and having its AI suggest the next outreach steps. Everything – leads, suggestions, follow-ups – is in one place, so I can easily track contacts and stay on top of my BD for the first time ever. Having it all on one platform makes business development much easier."
+                      </blockquote>
+                      <div className="mt-6">
+                        <p className="font-semibold text-[#1A2E40]">Timothy Gladden</p>
+                        <p className="text-[#6B7280]">Partner at RPCK Rastegar Panchal</p>
                       </div>
                     </div>
                   </div>
