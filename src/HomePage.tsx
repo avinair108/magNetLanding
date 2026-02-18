@@ -1,4 +1,4 @@
-import { Magnet, ChevronRight, BarChart3, Search, MessageSquare, TrendingUp, Clock, Users, Menu, X } from 'lucide-react';
+import { ChevronRight, BarChart3, Search, MessageSquare, TrendingUp, Clock, Users, Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 function HomePage() {
@@ -76,9 +76,11 @@ function HomePage() {
         <header className={`fixed top-0 left-0 right-0 z-10 bg-[#1A2E40] backdrop-blur-sm transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
           <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
             <a href="#" className="flex items-center gap-2 text-white">
-              <div className="text-[#3A6EA5]">
-                <Magnet size={24} />
-              </div>
+              <img 
+                src="/MagNetLogo.jpeg" 
+                alt="MagNet Logo" 
+                className="h-6 w-6 object-contain"
+              />
               <h2 className="text-xl font-semibold tracking-tight">MagNet Agents</h2>
             </a>
             
@@ -260,6 +262,23 @@ function HomePage() {
                     Book a demo
                   </a>
                 </div>
+              </div>
+            </div>
+
+            {/* Partnered With Section */}
+            <div className="mt-16 text-center">
+              <p className="text-base font-medium text-[#E6E6E6] mb-6">Partnered with</p>
+              <div className="flex items-center justify-center gap-8 flex-wrap">
+                <img 
+                  src="/clio_logo.png" 
+                  alt="Clio" 
+                  className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                />
+                <img 
+                  src="/leadwise_logo.jpeg" 
+                  alt="Leadwise" 
+                  className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                />
               </div>
             </div>
 
