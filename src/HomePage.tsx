@@ -282,30 +282,31 @@ function HomePage() {
               </div>
             </div>
 
-            {/* As Featured In Banner */}
-            <div className="mt-28 text-center">
-              <p className="text-base font-medium text-[#E6E6E6] mb-6">As featured in</p>
-              <div className="overflow-hidden">
-                <div className="flex" style={{
-                  animation: 'scroll 40s linear infinite',
-                  width: 'calc(100% * 8)'
-                }}>
-                  {/* Create 8 copies for seamless loop */}
-                  {[...Array(20)].map((_, setIndex) => 
-                    featuredImages.map((image, index) => (
-                      <div key={`set-${setIndex}-${index}`} className="flex-shrink-0 mx-2" style={{ width: '150px' }}>
-                        <img 
-                          src={image.src}
-                          alt={image.alt}
-                          className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity mx-auto"
-                        />
-                      </div>
-                    ))
-                  )}
-                </div>
+          </div>
+        </section>
+
+        {/* As Featured In - compact section, appears when user scrolls past hero */}
+        <section className="bg-[#1A2E40] py-5 overflow-hidden">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <p className="text-base font-medium text-[#E6E6E6] mb-4 text-center">As featured in</p>
+            <div className="overflow-hidden">
+              <div className="flex" style={{
+                animation: 'scroll 40s linear infinite',
+                width: 'calc(100% * 8)'
+              }}>
+                {[...Array(20)].map((_, setIndex) => 
+                  featuredImages.map((image, index) => (
+                    <div key={`set-${setIndex}-${index}`} className="flex-shrink-0 mx-2" style={{ width: '150px' }}>
+                      <img 
+                        src={image.src}
+                        alt={image.alt}
+                        className="h-10 w-auto opacity-80 hover:opacity-100 transition-opacity mx-auto"
+                      />
+                    </div>
+                  ))
+                )}
               </div>
             </div>
-
           </div>
         </section>
 
