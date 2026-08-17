@@ -81,7 +81,6 @@ function HomePage() {
                 alt="MagNet Logo"
                 className="h-8 w-auto object-contain"
               />
-              <h2 className="text-xl font-semibold tracking-tight">MagNet Agents</h2>
             </a>
             
             {/* Desktop Navigation */}
