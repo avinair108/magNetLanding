@@ -1,4 +1,3 @@
-import { Magnet } from 'lucide-react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './HomePage';
 import PrivacyPolicy from './PrivacyPolicy';
@@ -29,12 +28,13 @@ function App() {
               <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
                 <div className="md:flex md:items-start md:justify-between">
                   <div className="flex items-center gap-4 text-[#1A2E40]">
-                    <div className="text-[#3A6EA5]">
-                      <Magnet size={20} />
-                    </div>
-                    <h2 className="text-lg font-semibold">MagNet Agents</h2>
-                    <img 
-                      src="/nvidia-inception-program-badge-rgb-for-screen.png" 
+                    <img
+                      src="/magnet-logo-black.png"
+                      alt="MagNet Logo"
+                      className="h-7 w-auto object-contain"
+                    />
+                    <img
+                      src="/nvidia-inception-program-badge-rgb-for-screen.png"
                       alt="NVIDIA Inception Program" 
                       className="h-10 w-auto"
                     />
