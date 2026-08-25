@@ -1,0 +1,6 @@
+[allowlist]
+description = "Global allowlist for magNetLanding"
+paths = [
+    '''node_modules/''',
+    '''docs/''',
+]
