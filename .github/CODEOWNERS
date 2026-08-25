@@ -1,0 +1,4 @@
+# Require MagNetLegal's review on every change, repo-wide.
+# This is the account designated as the required branch-protection approver
+# for main - see branch protection settings on this repo.
+* @MagNetLegal
