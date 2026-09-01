@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# AI coding assistant instructions — this is a public repo, so agent
+# guidance and internal team/process notes stay local-only, never committed.
+CLAUDE.md
+AGENTS.md
