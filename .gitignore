@@ -27,3 +27,13 @@ dist-ssr
 # guidance and internal team/process notes stay local-only, never committed.
 CLAUDE.md
 AGENTS.md
+
+# Env files and local secrets — none exist in this repo today (it's a
+# static site with no hardcoded keys), but this is public, so block them
+# preemptively rather than waiting for one to almost get committed.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
